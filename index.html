@@ -6,7 +6,152 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__close" type="button">Закрыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="main-nav__link">Фото и Видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="main-nav__link">Форма Отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="page-header__logo">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona-logo" class="page-header__logo--image">
+      </a>
+
+      <button class="main-nav__open" type="button">Открыть меню</button>
+
+      <div class="page-subheader home-header">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona-canyon" class="home-header__cover">
+        <div class="home-header__wrapper">
+          <div class="home-header__intro">
+            <p class="home-header__greeting home-header__greeting--large">Welcome</p>
+            <p class="home-header__greeting home-header__greeting--small">to the gorgeous</p>
+          </div>
+          <h1 class="page-header__title">Sedona</h1>
+          <p class="home-header__slogan">"Because the Grand Canyon sucks!"</p>
+          <!--вероятно, фраза "because grand canyon..." будет не текстом, а графикой - TBD-->
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="intro">
+        <h2 class="intro__title">Седона - небольщой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="features-wrapper">
+
+          <ol class="features__list">
+            <li class="features__item features__item--detailed">
+              <h3 class="features__title">Настоящий городок</h3>
+              <p class="features__description features__description--number">№1</p>
+              <p class="features__description features__description--text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Настоящий городок" class="features-cover">
+            </li>
+
+            <li class="features__ul-group">
+              <ul class="features__ul-list">
+                <li class="features__item features__item--unordered features__item--housing">
+                  <h3 class="features__title">Жилье</h3>
+                  <p class="features__description features__description--text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+
+                <li class="features__item features__item--unordered features__item--gifts">
+                  <h3 class="features__title">Сувениры</h3>
+                  <p class="features__description features__description--text">Не только китайского, но и местного производства!</p>
+                </li>
+
+                <li class="features__item features__item--unordered features__item--food">
+                  <h3 class="features__title">Еда</h3>
+                  <p class="features__description features__description--text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                </li>
+              </ul>
+            </li>
+
+            <li class="features__item features__item--detailed">
+              <h3 class="features__title">Там есть мост дьявола</h3>
+              <p class="features__description features__description--number">№2</p>
+              <p class="features__description features__description--text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Настоящий городок" class="features-cover">
+            </li>
+
+            <li class="features__item features__item--active features__item--brief ">
+              <h3 class="features__title">Небольшая площадь</h3>
+              <p class="features__description features__description--number">№3</p>
+              <p class="features__description features__description--text">Все интересные места находятся очень близко</p>
+            </li>
+
+            <li class="features__item features__item--brief">
+              <h3 class="features__title">Красивая дорога</h3>
+              <p class="features__description features__description--number">№4</p>
+              <p class="features__description features__description--text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+
+            <li class="features__item features__item--brief">
+              <h3 class="features__title">Мало туристов</h3>
+              <p class="features__description features__description--number">№4</p>
+              <p class="features__description features__description--text">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ol>
+
+        </div>
+
+        <section class="survey">
+          <h2 class="survey__title">Заинтересовались?</h2>
+          <p class="survey__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="site-button survey__button">Найти гостиницу</button>
+        </section>
+
+        <section class="map">
+          <h2 class="visually-hidden">Схема проезда в Седону</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1687776.2410877328!2d-112.8765668647487!3d34.28835886640773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sua!4v1506459527070" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+      <section class="hashtag">
+        <h2 class="visually-hidden">Хэштэг</h2>
+        <p class="hashtag__name">#visitsedona</p>
+      </section>
+
+      <section class="social">
+        <h2 class="visually-hidden">Социальные ссылки</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <button class="site-button social__button social__button--twitter">Twitter</button>
+          </li>
+          <li class="social__item">
+            <button class="site-button social__button social__button--FB">Facebook</button>
+          </li>
+          <li class="social__item">
+            <button class="site-button social__button social__button--VK">VKontake</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="copyright">
+        <h2 class="visually-hidden">Copyright</h2>
+        <p class="copyright__text">Разработано</p>
+      </section>
+
+
+    </footer>
 
   </body>
 </html>
