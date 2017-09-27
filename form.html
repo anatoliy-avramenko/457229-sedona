@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - Форма Отзыва</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__close" type="button">Закрыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#" class="main-nav__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="main-nav__link">Фото и Видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__link">Форма Отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="page-header__logo">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona-logo" class="page-header__logo--image">
+      </a>
+
+      <button class="main-nav__open" type="button">Открыть меню</button>
+
+      <div class="page-subheader">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona-canyon" class="page-subheader__cover">
+        <h1 class="page-subheader__title">Sedona</h1>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="intro">
+        <h2 class="intro__title">Оставьте свой отзыв</h2>
+        <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="feedback site-form">
+        <div class="feedback__questions-set">
+          <h3 class="feedback__title">Представьтесь:</h3>
+            <div class="feedback__item feedback__item--text">
+              <label for="name" class="feedback__question feedback__question--text">Имя*:</label>
+              <input type="text" id="name" class="feedback__answer feedback__answer--text" placeholder="Петр">
+            </div>
+
+            <div class="feedback__item feedback__item--text">
+              <label for="surname" class="feedback__question feedback__question--text">Фамилия*:</label>
+              <input type="text" id="surname" class="feedback__answer feedback__answer--text" placeholder="Иванов">
+            </div>
+
+          <div class="feedback__item feedback__item--text">
+            <label for="father-name" class="feedback__question feedback__question--text">Отчество*:</label>
+            <input type="text" id="father-name" class="feedback__answer feedback__answer--text" placeholder="Александрович">
+          </div>
+        </div>
+
+        <div class="feedback__questions-set">
+          <h3 class="feedback__title">Контактная информация:</h3>
+          <div class="feedback__item feedback__item--misc">
+            <label for="phone" class="feedback__question feedback__question--misc">Контактный телефон*:</label>
+            <input type="tel" id="phone" class="feedback__answer feedback__answer--misc" placeholder="Введите телефон">
+          </div>
+
+          <div class="feedback__item feedback__item--misc">
+            <label for="email" class="feedback__question feedback__question--misc">Электронная почта*:</label>
+            <input type="email" id="email" class="feedback__answer feedback__answer--misc" placeholder="Введите e-mail">
+          </div>
+        </div>
+
+        <div class="feedback__questions-set">
+          <h3 class="feedback__title">Ваше общее впечатление:</h3>
+          <div class="feedback__item feedback__item--radio">
+            <label for="opt1" class="feedback__question feedback__question--radio">Скорее положительное</label>
+            <input type="radio" id="opt1" name="impressions" class="feedback__answer feedback__answer--radio">
+          </div>
+          <div class="feedback__item feedback__item--radio">
+            <label for="opt2" class="feedback__question feedback__question--radio">Скорее отрицательное</label>
+            <input type="radio" id="opt2" name="impressions" class="feedback__answer feedback__answer--radio">
+          </div>
+          <div class="feedback__item feedback__item--radio">
+            <label for="opt3" class="feedback__question feedback__question--radio">Затрудняюсь ответить</label>
+            <input type="radio" id="opt3" name="impressions" class="feedback__answer feedback__answer--radio">
+          </div>
+        </div>
+
+        <div class="feedback__questions-set">
+          <h3 class="feedback__title">Посещенные достопримечательности:</h3>
+          <div class="feedback__item feedback__item--check">
+            <label for="attr-1" class="feedback__question feedback__question--check">Мост Дьявола</label>
+            <input type="checkbox" id="attr-1" name="attractions" class="feedback__answer feedback__answer--check">
+          </div>
+          <div class="feedback__item check">
+            <label for="attr-2" class="feedback__question feedback__question--check">Слайд-парк</label>
+            <input type="checkbox" id="attr-2" name="attractions" class="feedback__answer feedback__answer--check">
+          </div>
+          <div class="feedback__item check">
+            <label for="attr-3" class="feedback__question feedback__question--check">Гора-Колокол</label>
+            <input type="checkbox" id="attr-3" name="attractions" class="feedback__answer feedback__answer--check">
+          </div>
+          <div class="feedback__item check">
+            <label for="attr-4" class="feedback__question feedback__question--check">Красные скалы</label>
+            <input type="checkbox" id="attr-4" name="attractions" class="feedback__answer feedback__answer--check">
+          </div>
+        </div>
+
+        <div class="feedback__questions-set">
+          <h3 class="feedback__title">Посещенные достопримечательности:</h3>
+          <div class="feedback__item feedback__item--textarea">
+            <textarea name="emotions" id="emotions" cols="30" rows="10" class="feedback__answer feedback__answer--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="site-button form-button">Отправить отзыв</button>
+
+      </form>
+    </main>
+
+    <footer class="page-footer">
+
+      <section class="hashtag">
+        <h2 class="visually-hidden">Хэштэг</h2>
+        <a href="" class="hashtag__name">#visitsedona</a>
+      </section>
+
+      <section class="social">
+        <h2 class="visually-hidden">Социальные ссылки</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <button class="site-button social__button social__button--twitter">Twitter</button>
+          </li>
+          <li class="social__item">
+            <button class="site-button social__button social__button--FB">Facebook</button>
+          </li>
+          <li class="social__item">
+            <button class="site-button social__button social__button--VK">VKontake</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="copyright">
+        <h2 class="visually-hidden">Copyright</h2>
+        <p class="copyright__text">Разработано</p>
+      </section>
+
+
+    </footer>
+
+  </body>
+</html>
