@@ -103,17 +103,16 @@
 }
 
 .feedback__answer__wrapper--email {
-
   &::after {
     background: url("../img/icon-mail.svg") no-repeat;
   }
+}
 
-}.feedback__answer__wrapper--tel {
-
-   &::after {
-     background: url("../img/icon-phone.svg") no-repeat;
-   }
- }
+.feedback__answer__wrapper--tel {
+  &::after {
+    background: url("../img/icon-phone.svg") no-repeat;
+  }
+}
 
 .feedback__answer--radio,
 .feedback__answer--check {
