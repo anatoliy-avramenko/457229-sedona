@@ -1,7 +1,8 @@
-.copyright {
+.copyright__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .copyright__logo {
@@ -12,6 +13,3 @@
   margin-left: 5px;
 }
 
-//.copyright__logo > * {
-//  fill: $black;
-//}
