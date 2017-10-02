@@ -1,0 +1,182 @@
+.feedback__questions-set {
+  padding: 20px 20px 0;
+}
+
+.feedback__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 20px;
+}
+
+.feedback__item {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.feedback__item--misc {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.feedback__item--radio,
+.feedback__item--check {
+  justify-content: flex-start;
+  padding-bottom: 0;
+
+  &:last-of-type {
+    padding-bottom: 20px;
+  }
+}
+
+.feedback__question {
+  font-size: 14px;
+  color: $mine-shaft;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.feedback__question--misc {
+  padding-bottom: 10px;
+}
+
+.feedback__question--radio,
+.feedback__question--check {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  color: $black;
+  width: 100%;
+  padding: 23px 0 23px 80px;
+  margin-right: 0;
+}
+
+.feedback__question--check {
+  padding: 32px 0 32px 80px;
+}
+
+.feedback__answer {
+  background: $concrete;
+  border: none;
+  color: $black;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+
+  &::-webkit-input-placeholder {
+    color: $black;
+    text-align: left;
+  }
+}
+
+.feedback__answer__wrapper {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 63px;
+    height: 63px;
+    background: $mercury;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 24px;
+    right: 22px;
+  }
+}
+
+.feedback__answer__wrapper--email {
+
+  &::after {
+    background: url("../img/icon-mail.svg") no-repeat;
+  }
+
+}.feedback__answer__wrapper--tel {
+
+   &::after {
+     background: url("../img/icon-phone.svg") no-repeat;
+   }
+ }
+
+.feedback__answer--radio,
+.feedback__answer--check {
+  width: 0;
+  height: 0;
+  opacity: 0;
+
+  & + .feedback__question--radio::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    background: $concrete;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+  }
+
+  &:checked + .feedback__question--radio::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    background: $mine-shaft;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 17px;
+    top: 24px;
+  }
+
+  & + .feedback__question--check::before {
+    content: "";
+    display: block;
+    border-radius: 6px;
+    background: $concrete;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+    top: 18px;
+  }
+
+  &:checked + .feedback__question--check::after {
+    content: "";
+    display: block;
+    background: url("../img/icon-tick.svg") no-repeat;
+    width: 24px;
+    height: 16px;
+    position: absolute;
+    left: 18px;
+    top: 38px;
+  }
+}
+
+.feedback__answer--textarea {
+  resize: none;
+}
+
+.feedback__answer:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.feedback-button {
+  margin: 30px 0 15px;
+}
