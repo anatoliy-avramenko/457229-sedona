@@ -1,0 +1,32 @@
+.main-nav__link {
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+}
+
+.main-nav__item {
+  background: $half-baked;
+  padding: 17px;
+  border-bottom: 1px solid $bermuda-gray;
+}
+
+.main-nav__item--last {
+  border-bottom: none;
+  //shadow:
+}
+
+.main-nav__toggle {
+  width: 23px;
+  height: 23px;
+  font-size: 0;
+}
+
+.main-nav__toggle--close {
+  mask-image: url("../img/icon-cross.svg");
+  background-color: $white;
+}
+
+.main-nav__toggle--open {
+  mask-image: url("../img/icon-menu.svg");
+  background-color: $half-baked;
+}

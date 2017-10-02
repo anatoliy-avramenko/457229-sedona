@@ -1,0 +1,54 @@
+$half-baked: #81b3d2;
+$bermuda-gray: #678fa8;
+$mine-shaft: #333333;
+$white: #ffffff;
+$black: #000000;
+$gallery: #eeeeee;
+$alto: #d6d6d6;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: $mine-shaft;
+  text-decoration: none;
+  transition: 0.4s;
+  outline: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+.visually-hidden {
+  font-size: 0;
+}
+
+.site-list {
+  list-style-type: none;
+}
+
+.btn-normalize {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.site-button {
+  background: $half-baked;
+  color: $white;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 20px;
+  outline: none;
+  border: none;
+}
