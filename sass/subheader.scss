@@ -14,7 +14,7 @@
 }
 
 .subheader__cover {
-  //overflow: hidden;
+  //overflow: scroll;
 }
 
 .subheader__title {
@@ -23,9 +23,9 @@
   left: 0;
   height: 100%;
   width: 100%;
+  background: url("../img/text-sedona.svg") no-repeat;
 }
 
 .subheader__title--home {
   background: url("../img/text-sedona-index.svg") no-repeat;
 }
-

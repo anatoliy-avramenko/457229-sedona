@@ -1,4 +1,9 @@
 .page-header {
   width: 100%;
   overflow: hidden;
+  position: relative;
+}
+
+.page-header__top {
+  position: relative;
 }

@@ -1,3 +1,7 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__link {
   font-size: 18px;
   font-weight: 700;
@@ -19,14 +23,17 @@
   width: 23px;
   height: 23px;
   font-size: 0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .main-nav__toggle--close {
-  mask-image: url("../img/icon-cross.svg");
+  mask: url("../img/icon-cross.svg") no-repeat;
   background-color: $white;
 }
 
 .main-nav__toggle--open {
-  mask-image: url("../img/icon-menu.svg");
+  mask: url("../img/icon-menu.svg") no-repeat;
   background-color: $half-baked;
 }
