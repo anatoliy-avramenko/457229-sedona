@@ -1,0 +1,20 @@
+.social__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.social__button {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0 4px 0;
+}
+
+.social__icon {
+  width: 25px;
+  height: 25px;
+  fill: $white;
+  background: $half-baked;
+  //vertical-align: middle;
+}
