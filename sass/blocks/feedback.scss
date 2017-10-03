@@ -104,13 +104,13 @@
 
 .feedback__answer__wrapper--email {
   &::after {
-    background: url("../img/icon-mail.svg") no-repeat;
+    background: url("../../img/icon-mail.svg") no-repeat;
   }
 }
 
 .feedback__answer__wrapper--tel {
   &::after {
-    background: url("../img/icon-phone.svg") no-repeat;
+    background: url("../../img/icon-phone.svg") no-repeat;
   }
 }
 
@@ -159,7 +159,7 @@
   &:checked + .feedback__question--check::after {
     content: "";
     display: block;
-    background: url("../img/icon-tick.svg") no-repeat;
+    background: url("../../img/icon-tick.svg") no-repeat;
     width: 24px;
     height: 16px;
     position: absolute;

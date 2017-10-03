@@ -4,7 +4,7 @@
 
 .features::before {
   content: "";
-  background: url("../img/bg-triangle.svg") no-repeat;
+  background: url("../../img/bg-triangle.svg") no-repeat;
   height: 40px;
   width: 360px;
   position: absolute;
@@ -14,6 +14,7 @@
 
 .features__item {
   padding: 20px 20px 0 20px;
+  font-size: 0;
 }
 
 .features__item--detailed {
@@ -58,8 +59,8 @@
 }
 
 .features__cover {
-  //width: 100%;
-  //margin: 0 -20px;
+  width: 320px;
+  margin: 0 -20px;
 }
 
 .features__item--unordered {
@@ -78,15 +79,15 @@
 }
 
 .features__item--housing::before {
-  mask: url("../img/icon-house.svg") no-repeat;
+  mask: url("../../img/icon-house.svg") no-repeat;
 }
 
 .features__item--gifts::before {
-  mask: url("../img/icon-gift.svg") no-repeat;
+  mask: url("../../img/icon-gift.svg") no-repeat;
 }
 
 .features__item--food::before {
-  mask: url("../img/icon-burger.svg") no-repeat;
+  mask: url("../../img/icon-burger.svg") no-repeat;
 }
 
 .features__title--unordered {
