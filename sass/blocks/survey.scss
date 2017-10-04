@@ -1,23 +1,56 @@
 .survey {
-  padding: 30px;
+  padding: 30px 20px;
+  margin: 0 auto;
+  background: $white;
+  width: $mobile-width;
+}
+
+@media (min-width: $tablet-width) {
+  .survey {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .survey {
+    width: $desktop-width;
+  }
 }
 
 .survey__title {
   font-size: 21px;
+  line-height: 24px;
   font-weight: 700;
   color: $black;
   padding-bottom: 25px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .survey__description {
   font-size: 14px;
   font-weight: 400;
   padding-bottom: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .survey__title,
+  .survey__description {
+    width: 458px;
+  }
 }
 
 .survey__button {
-  width: 100%;
+  width: 280px;
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .survey__button {
+    width: 458px;
+  }
 }
 
 .survey__video {

@@ -1,15 +1,61 @@
 .intro {
-  padding: 20px;
+  padding: 50px 20px 20px;
+  margin: 0 auto;
+  width: $mobile-width;
+  background: $white;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    width: $tablet-width;
+    padding: 50px 20px 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    width: $desktop-width;
+  }
 }
 
 .intro__title {
+  margin: 0 auto;
   font-size: 18px;
   color: $black;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .intro__title {
+    width: 460px;
+  }
+}
+
 .intro__description {
   font-size: 14px;
   color: $mine-shaft;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  background-image: url("#{$path-to-img}/bg-triangle.svg");
+  background-repeat: no-repeat;
+  //background-position: center top;
+  background-attachment: initial;
+  background-size: cover;
+  width: 320px;
+  height: 37px;
+  bottom: -36px;
+  left: 0;
+  //margin: 0 auto;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .intro::after {
+    display: none;
+  }
 }

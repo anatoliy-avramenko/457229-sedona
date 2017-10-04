@@ -11,7 +11,15 @@
     height: 56px;
     background: $white;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
     justify-content: space-around;
@@ -37,7 +45,7 @@
   border-bottom: 1px solid $bermuda-gray;
 }
 
-//ПОДУМАТЬ - нужно захерячить сделать меню флекс базис, как-то разбить всю ширину на две половины
+//ПОДУМАТЬ - нужно сделать меню флекс базис, как-то разбить всю ширину на две половины
 
 @media (min-width: $tablet-width) {
   .main-nav__item {
@@ -73,12 +81,21 @@
   .main-nav__top-bar {
     position: relative;
     top: -56px;
-    //left: auto;
-    //right: auto;
+    left: auto;
+    right: auto;
     margin: 0 auto;
     background: none;
     width: 102px;
   }
+}
+
+.main-nav__logo {
+  margin: 0 auto;
+}
+
+.main-nav__image {
+  position: relative;
+  z-index: 1;
 }
 
 .main-nav__toggle {
@@ -98,12 +115,12 @@
 }
 
 .main-nav__toggle--close {
-  mask: url("../img/icon-cross.svg") no-repeat;
+  mask: url("#{$path-to-img}/icon-cross.svg") no-repeat;
   background-color: $white;
 }
 
 .main-nav__toggle--open {
-  mask: url("../img/icon-menu.svg") no-repeat;
+  mask: url("#{$path-to-img}/icon-menu.svg") no-repeat;
   background-color: $half-baked;
 }
 

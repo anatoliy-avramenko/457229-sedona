@@ -1,0 +1,99 @@
+.subheader {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.subheader::after,
+.subheader::before {
+  content: "";
+  display: block;
+  background-image: url("#{$path-to-img}/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: initial;
+  background-size: cover;
+  width: 320px;
+  height: 28px;
+  position: absolute;
+  bottom: -1px;
+  left: auto;
+  right: auto;
+  z-index: 3;
+}
+
+.subheader::before {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .subheader::after {
+    width: 700px;
+    height: 60px;
+  }
+
+  .subheader::before {
+    display: block;
+    width: 780px;
+    height: 70px;
+    bottom: -25px;
+  }
+}
+
+//временное решение, пока нет треугольников для desktop
+@media (min-width: $desktop-width) {
+  .subheader::before {
+    display: block;
+    width: 1210px;
+    min-height: 170px;
+    bottom: -25px;
+  }
+}
+
+.subheader__cover {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  height: 389px;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .subheader__cover {
+    height: 520px;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subheader__cover {
+    height: 520px;
+    width: 1200px;
+  }
+}
+
+.subheader__title {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  height: 100%;
+  width: 280px;
+  background-image: url("#{$path-to-img}/text-sedona.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: initial;
+  background-size: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .subheader__title {
+    width: 460px;
+    background-size: 460px;
+  }
+}
+
+.subheader__title--home {
+  background-image: url("#{$path-to-img}/text-sedona-index.svg");
+}

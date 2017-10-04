@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
-@import "site-wide.scss";
+@import "variables";
+@import "site-wide";
+
+//importing blocks' styles
 @import "blocks/copyright";
 @import "blocks/features";
 @import "blocks/feedback";
 @import "blocks/hashtag";
-//@import "home-header.scss";
+@import "blocks/home-header";
 @import "blocks/intro";
-@import "main-nav";
+@import "blocks/main-nav";
 @import "blocks/map";
-//@import "page-footer.scss";
+@import "blocks/page-footer";
 @import "blocks/page-header";
-//@import "page-main.scss";
+@import "blocks/page-main";
 @import "blocks/photos";
 @import "blocks/social";
-@import "subheader";
+@import "blocks/subheader";
 @import "blocks/survey";
