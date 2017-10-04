@@ -1,6 +1,64 @@
+.photos {
+  margin: 0 auto;
+  width: $mobile-width;
+  background: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .photos {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos {
+    width: $desktop-width;
+  }
+}
+
 .photos__item {
-  //margin-top: 20px;
   padding: 20px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__item {
+    padding: 0;
+    width: 324px;
+    font-size: 0;
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__item {
+    width: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photos__item--large {
+    width: 100%;
+  }
+}
+
+.photos__list {
+  list-style: none;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__list {
+    width: 648px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__list {
+    width: $desktop-width;
+  }
 }
 
 .photos__title {
@@ -9,6 +67,32 @@
   color: $black;
   text-align: left;
   margin-bottom: 10px;
+}
+
+@media (min-width: $desktop-width) {
+  .photos__title {
+    color: $white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photos__caption {
+    background: $concrete;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__caption {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
 }
 
 .photos__author {
@@ -23,6 +107,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .photos__author {
+    color: $white;
+  }
+}
+
 .photos__likes {
   font-size: 14px;
   font-weight: 700;
@@ -33,9 +123,9 @@
 
   &::before {
     content: "";
-    mask-image: url("../../img/icon-like.svg");
+    mask-image: url("#{$path-to-img}/icon-like.svg");
     mask-repeat: no-repeat;
-    background: $silver-chalice;
+    background-color: $silver-chalice;
     position: absolute;
     width: 23px;
     height: 21px;
@@ -44,6 +134,27 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .photos__likes {
+    color: $white;
+  }
+
+  .photos__likes::before {
+    background-color: $white;
+  }
+}
+
 .photos__image {
   margin-bottom: 10px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__image {
+    margin-bottom: 0;
+  }
+}
+
+.photos__fullsize {
+  font-size: 0;
 }

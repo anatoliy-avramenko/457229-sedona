@@ -53,6 +53,20 @@
   }
 }
 
+//для видео убрать controls и создать кастомные
 .survey__video {
   margin: 0 -30px;
+}
+
+@media (min-width: $tablet-width) {
+  .survey__video {
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .survey__video {
+    width: 800px;
+  }
 }

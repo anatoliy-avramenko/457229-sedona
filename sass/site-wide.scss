@@ -83,3 +83,9 @@ body {
   bottom: 0;
   left: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .separator::after {
+    display: none;
+  }
+}

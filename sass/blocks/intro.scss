@@ -38,7 +38,7 @@
   color: $mine-shaft;
 }
 
-.intro::after {
+.intro--home::after {
   content: "";
   position: absolute;
   background-image: url("#{$path-to-img}/bg-triangle.svg");
