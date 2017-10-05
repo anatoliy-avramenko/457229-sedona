@@ -23,7 +23,7 @@ $desktop-width: 1200px;
   transition: 0.4s;
   outline: none;
   text-transform: uppercase;
-  text-align: center;
+  //text-align: center;
 }
 
 html,
@@ -39,6 +39,12 @@ body {
 .page-wrapper {
   min-width: 320px;
   background: $concrete;
+  display: block;
+}
+
+.site-width {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .visually-hidden {

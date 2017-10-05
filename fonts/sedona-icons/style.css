@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'sedona-icons';
+  src:  url('fonts/sedona-icons.eot?4d0jwm');
+  src:  url('fonts/sedona-icons.eot?4d0jwm#iefix') format('embedded-opentype'),
+    url('fonts/sedona-icons.ttf?4d0jwm') format('truetype'),
+    url('fonts/sedona-icons.woff?4d0jwm') format('woff'),
+    url('fonts/sedona-icons.svg?4d0jwm#sedona-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sedona-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-htmlacademy:before {
+  content: "\e910";
+}
+.icon-burger:before {
+  content: "\e900";
+}
+.icon-cross:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\e902";
+}
+.icon-gift:before {
+  content: "\e903";
+}
+.icon-house:before {
+  content: "\e904";
+}
+.icon-like:before {
+  content: "\e905";
+}
+.icon-mail:before {
+  content: "\e906";
+}
+.icon-map-marker .path1:before {
+  content: "\e907";
+  color: rgb(255, 255, 255);
+}
+.icon-map-marker .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(129, 179, 211);
+}
+.icon-menu:before {
+  content: "\e909";
+}
+.icon-phone:before {
+  content: "\e90a";
+}
+.icon-tick:before {
+  content: "\e90b";
+}
+.icon-twitter:before {
+  content: "\e90c";
+}
+.icon-video-fullscreen:before {
+  content: "\e90d";
+}
+.icon-video-replay:before {
+  content: "\e90e";
+}
+.icon-video-subtitles:before {
+  content: "\e90f";
+}

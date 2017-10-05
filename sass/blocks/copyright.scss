@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  padding-bottom: 43px;
 }
 
 .copyright__logo {
@@ -11,4 +11,13 @@
   width: 27px;
   height: 34px;
   margin-left: 5px;
+}
+
+.copyright__icon {
+  margin: 0 0 0 15px;
+}
+
+.copyright__icon::before {
+  font-size: 34px;
+  color: $black;
 }

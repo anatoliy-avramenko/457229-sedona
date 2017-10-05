@@ -108,18 +108,18 @@
   z-index: 5;
 }
 
+.main-nav__toggle--open::before {
+  font-size: 23px;
+  color: $half-baked;
+}
+
+.main-nav__toggle--close::before {
+  font-size: 23px;
+  color: $white;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
     display: none;
   }
-}
-
-.main-nav__toggle--close {
-  mask: url("#{$path-to-img}/icon-cross.svg") no-repeat;
-  background-color: $white;
-}
-
-.main-nav__toggle--open {
-  mask: url("#{$path-to-img}/icon-menu.svg") no-repeat;
-  background-color: $half-baked;
 }

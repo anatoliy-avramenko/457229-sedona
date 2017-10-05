@@ -75,6 +75,10 @@
   }
 }
 
+.photos__caption {
+  text-align: left;
+}
+
 @media (min-width: $tablet-width) {
   .photos__caption {
     background: $concrete;
@@ -114,33 +118,32 @@
 }
 
 .photos__likes {
+  display: inline-block;
   font-size: 14px;
   font-weight: 700;
   color: $black;
   text-align: left;
   padding-left: 35px;
   position: relative;
+}
 
-  &::before {
-    content: "";
-    mask-image: url("#{$path-to-img}/icon-like.svg");
-    mask-repeat: no-repeat;
-    background-color: $silver-chalice;
-    position: absolute;
-    width: 23px;
-    height: 21px;
-    bottom: 0;
-    left: 0;
+.photos__upvotes::before {
+  display: inline-block;
+  color: $silver-chalice;
+  font-size: 23px;
+  text-align: left;
+}
+
+@media (min-width: $desktop-width) {
+  .photos__upvotes::before {
+    color: $white;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .photos__likes {
     color: $white;
-  }
-
-  .photos__likes::before {
-    background-color: $white;
   }
 }
 
