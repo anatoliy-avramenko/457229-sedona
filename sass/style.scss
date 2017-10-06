@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
-@import "site-wide.scss";
-@import "copyright.scss";
-@import "features.scss";
-@import "feedback.scss";
-@import "hashtag.scss";
-//@import "home-header.scss";
-@import "intro.scss";
-@import "main-nav.scss";
-@import "map.scss";
-//@import "page-footer.scss";
-@import "page-header.scss";
-//@import "page-main.scss";
-@import "photos.scss";
-@import "social.scss";
-@import "subheader.scss";
-@import "survey.scss";
+@import "../fonts/sedona-icons/style.css";
+@import "variables";
+@import "site-wide";
+
+//importing blocks' styles
+@import "blocks/copyright";
+@import "blocks/features";
+@import "blocks/feedback";
+@import "blocks/hashtag";
+@import "blocks/home-header";
+@import "blocks/intro";
+@import "blocks/main-nav";
+@import "blocks/map";
+@import "blocks/page-footer";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/photos";
+@import "blocks/social";
+@import "blocks/subheader";
+@import "blocks/survey";

@@ -1,5 +1,60 @@
+.feedback {
+  width: $mobile-width;
+  margin: 0 auto;
+  background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: $tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    width: $desktop-width;
+  }
+}
+
 .feedback__questions-set {
   padding: 20px 20px 0;
+}
+
+.feedback__questions-set--text {
+  order: 1;
+}
+
+.feedback__questions-set--radio {
+  order: 0;
+}
+
+.feedback__questions-set--misc {
+  order: 2;
+  width: 100%;
+}
+
+.feedback__questions-set--check {
+  order: 4;
+  width: 100%;
+}
+
+.feedback__questions-set--textarea {
+  order: 5;
+  width: 100%;
+}
+
+.feedback__completion {
+  order: 6;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback__legend {
+  font-size: 14px;
 }
 
 .feedback__title {
@@ -104,13 +159,13 @@
 
 .feedback__answer__wrapper--email {
   &::after {
-    background: url("../img/icon-mail.svg") no-repeat;
+    background: url("../../img/icon-mail.svg") no-repeat;
   }
 }
 
 .feedback__answer__wrapper--tel {
   &::after {
-    background: url("../img/icon-phone.svg") no-repeat;
+    background: url("../../img/icon-phone.svg") no-repeat;
   }
 }
 
@@ -159,7 +214,7 @@
   &:checked + .feedback__question--check::after {
     content: "";
     display: block;
-    background: url("../img/icon-tick.svg") no-repeat;
+    background: url("../../img/icon-tick.svg") no-repeat;
     width: 24px;
     height: 16px;
     position: absolute;

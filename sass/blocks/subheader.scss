@@ -1,0 +1,141 @@
+.subheader {
+  position: relative;
+  height: 160px;
+}
+
+@media (min-width: $tablet-width) {
+  .subheader {
+    height: 190px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .subheader {
+    height: 300px;
+  }
+}
+
+.subheader--home {
+  height: 390px;
+}
+
+@media (min-width: $tablet-width) {
+  .subheader--home {
+    height: 520px;
+  }
+}
+
+.subheader::after,
+.subheader::before {
+  content: "";
+  display: block;
+  background-image: url("#{$path-to-img}/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: initial;
+  background-size: cover;
+  width: 320px;
+  height: 28px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  margin: 0 auto;
+}
+
+.subheader::before {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .subheader::after {
+    width: 700px;
+    height: 60px;
+  }
+
+  .subheader::before {
+    display: block;
+    width: 780px;
+    height: 70px;
+    bottom: -25px;
+  }
+}
+
+//временное решение, пока нет треугольников для desktop
+@media (min-width: $desktop-width) {
+  .subheader::before {
+    display: block;
+    width: 1210px;
+    min-height: 170px;
+    bottom: -25px;
+  }
+}
+
+.subheader__cover {
+  display: block;
+  //text-align: center;
+  //vertical-align: bottom;
+  //height: 768px;
+  //width: 389px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .subheader__cover {
+    height: 520px;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subheader__cover {
+    height: 520px;
+    width: 1200px;
+  }
+}
+
+.subheader__title {
+  position: absolute;
+  top: 50px;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  background-image: url("#{$path-to-img}/text-sedona.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: initial;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .subheader__title {
+    top: 95px;
+    bottom: 115px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subheader__title {
+    top: 105px;
+    bottom: 120px;
+  }
+}
+
+.subheader__title--home {
+  background-image: url("#{$path-to-img}/text-sedona-index.svg");
+  top: 90px;
+  bottom: 90px;
+}
+
+@media (min-width: $tablet-width) {
+  .subheader__title--home {
+    top: 75px;
+    bottom: 100px;
+  }
+}

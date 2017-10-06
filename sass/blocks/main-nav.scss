@@ -1,0 +1,125 @@
+.main-nav {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  background: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 768px;
+    height: 56px;
+    background: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.main-nav__link {
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__link {
+    font-size: 14px;
+    color: $black;
+  }
+}
+
+.main-nav__item {
+  background: $half-baked;
+  padding: 17px;
+  border-bottom: 1px solid $bermuda-gray;
+}
+
+//ПОДУМАТЬ - нужно сделать меню флекс базис, как-то разбить всю ширину на две половины
+
+@media (min-width: $tablet-width) {
+  .main-nav__item {
+    background: $white;
+    border-bottom: none;
+    padding: 0;
+    margin: 0 25px;
+    line-height: 56px;
+  }
+
+  .main-nav__item:nth-of-type(2) {
+    margin-right: auto;
+  }
+
+  .main-nav__item:nth-of-type(3) {
+    margin-left: auto;
+  }
+}
+
+.main-nav__item--last {
+  border-bottom: none;
+  //shadow:
+}
+
+.main-nav__top-bar {
+  height: 56px;
+  background: $white;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__top-bar {
+    position: relative;
+    top: -56px;
+    left: auto;
+    right: auto;
+    margin: 0 auto;
+    background: none;
+    width: 102px;
+  }
+}
+
+.main-nav__logo {
+  margin: 0 auto;
+}
+
+.main-nav__image {
+  position: relative;
+  z-index: 1;
+}
+
+.main-nav__toggle {
+  width: 23px;
+  height: 23px;
+  font-size: 0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+}
+
+.main-nav__toggle--open::before {
+  font-size: 23px;
+  color: $half-baked;
+}
+
+.main-nav__toggle--close::before {
+  font-size: 23px;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

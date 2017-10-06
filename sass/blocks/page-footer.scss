@@ -1,0 +1,20 @@
+.page-footer {
+  margin: 0 auto;
+  background: $white;
+  width: $mobile-width;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: $tablet-width;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+  }
+}

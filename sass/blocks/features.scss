@@ -1,0 +1,240 @@
+.features {
+  position: relative;
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    width: $tablet-width;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .features {
+    width: $desktop-width;
+  }
+}
+
+///////////////////////////////////////////////
+//FEATURES__UL...
+
+.features__ul-group {
+  list-style: none;
+  background: $white;
+}
+
+.features__ul-list {
+  padding: 25px 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features__ul-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0;
+    height: 330px;
+  }
+
+  .features__ul-list--low {
+    height: 256px;
+  }
+}
+
+///////////////////////////////////////////////
+//FEATURES__CONTENTS
+
+@media (min-width: $tablet-width) {
+  .features__contents {
+    width: 256px;
+    padding: 45px;
+  }
+
+  .features__contents--reversed {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__contents {
+    width: 400px;
+  }
+}
+
+///////////////////////////////////////////////
+//FEATURES__ITEM
+
+.features__item {
+  padding: 20px 20px 0 20px;
+  font-size: 0;
+}
+
+.features__item--arrowed {
+  padding-top: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__item,
+  .features__item--arrowed {
+    padding: 0 0 0 0;
+    height: 256px;
+  }
+}
+
+.features__item--detailed {
+  background: $half-baked;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .features__item--detailed {
+    display: flex;
+  }
+}
+
+.features__item--unordered {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 0 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features__item--unordered,
+  .features__item--brief {
+    padding: 60px 45px;
+    height: 100%;
+    width: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item--unordered,
+  .features__item--brief {
+    width: 400px;
+  }
+}
+
+.features__item--brief {
+  background: $gallery;
+  position: relative;
+}
+
+.features__item--brief::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid $alto;
+  width: 90%;
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .features__item--brief::after {
+    border-bottom: none;
+  }
+}
+
+.features__item--brief:last-of-type::after {
+  border-bottom: none;
+}
+
+///////////////////////////////////////////////
+//FEATURES__TITLE
+
+.features__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+  margin: 0 auto 20px;
+  width: 100%;
+}
+
+.features__title--unordered {
+  text-align: left;
+  width: auto;
+  margin: 0 0 0 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__title,
+  .features__title--unordered {
+    width: 134px;
+    text-align: center;
+  }
+}
+
+.features__title--highlight {
+  color: $white;
+  padding-top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__title--highlight {
+    padding-top: 0;
+  }
+}
+
+///////////////////////////////////////////////
+//FEATURES__DESCRIPTION
+
+.features__description {
+  color: $mine-shaft;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__description {
+    padding-bottom: 0;
+  }
+}
+
+.features__description--unordered {
+  text-align: left;
+  padding: 10px 0 10px 50px;
+  width: 100%;
+}
+
+.features__description--highlight {
+  color: $white;
+}
+
+.features__description--number {
+  padding-bottom: 20px;
+}
+
+.features__description--number::after,
+.features__description--number::before {
+  content: " — ";
+}
+
+///////////////////////////////////////////////
+//FEATURES__COVER
+
+.features__cover {
+  width: 320px;
+  margin: 0 -20px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__cover {
+    flex-grow: 1;
+    margin: 0 0;
+    height: 100%;
+  }
+}
+
+///////////////////////////////////////////////
+//FEATURES__ICON
+
+.features__icon::before {
+  font-size: 40px;
+  color: $half-baked;
+}
