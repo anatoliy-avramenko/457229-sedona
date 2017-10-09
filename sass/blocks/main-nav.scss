@@ -1,8 +1,21 @@
+///////////////////////////////////////////////
+//MAIN-NAV
+
 .main-nav {
   position: relative;
   width: 320px;
   margin: 0 auto;
   background: $white;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav--opened .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -19,6 +32,9 @@
   }
 }
 
+///////////////////////////////////////////////
+//MAIN-NAV__LIST
+
 @media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
@@ -32,17 +48,35 @@
   color: $white;
 }
 
+///////////////////////////////////////////////
+//MAIN-NAV__LINK
+
 @media (min-width: $tablet-width) {
   .main-nav__link {
     font-size: 14px;
+    line-height: 23px;
     color: $black;
   }
 }
 
+///////////////////////////////////////////////
+//MAIN-NAV__ITEM
+
 .main-nav__item {
   background: $half-baked;
-  padding: 17px;
+  padding: 15px;
   border-bottom: 1px solid $bermuda-gray;
+  border-top: 1px solid $aqua-island;
+  display: block;
+
+  &:first-of-type {
+    border-top: none;
+  }
+}
+
+.main-nav__item--last {
+  border-bottom: none;
+  box-shadow: inset 0 -8px 7px -7px rgba(26, 37, 43, 0.4);
 }
 
 //ПОДУМАТЬ - нужно сделать меню флекс базис, как-то разбить всю ширину на две половины
@@ -50,10 +84,11 @@
 @media (min-width: $tablet-width) {
   .main-nav__item {
     background: $white;
-    border-bottom: none;
+    border: none;
     padding: 0;
     margin: 0 25px;
     line-height: 56px;
+    box-shadow: none;
   }
 
   .main-nav__item:nth-of-type(2) {
@@ -65,10 +100,8 @@
   }
 }
 
-.main-nav__item--last {
-  border-bottom: none;
-  //shadow:
-}
+///////////////////////////////////////////////
+//MAIN-NAV_TOP-BAR
 
 .main-nav__top-bar {
   height: 56px;
@@ -89,16 +122,51 @@
   }
 }
 
+///////////////////////////////////////////////
+//MAIN-NAV__LOGO
+
 .main-nav__logo {
   margin: 0 auto;
 }
+
+///////////////////////////////////////////////
+//MAIN-NAV__IMAGE
 
 .main-nav__image {
   position: relative;
   z-index: 1;
 }
 
-.main-nav__toggle {
+///////////////////////////////////////////////
+//MAIN-NAV__TOGGLE
+
+//.main-nav__toggle {
+//  width: 23px;
+//  height: 23px;
+//  font-size: 0;
+//  position: absolute;
+//  top: 15px;
+//  right: 15px;
+//  z-index: 5;
+//}
+//
+//.main-nav__toggle--open::before {
+//  font-size: 23px;
+//  color: $half-baked;
+//}
+//
+//.main-nav__toggle--close::before {
+//  font-size: 23px;
+//  color: $white;
+//}
+//
+//@media (min-width: $tablet-width) {
+//  .main-nav__toggle {
+//    display: none;
+//  }
+//}
+
+.main-nav--opened .main-nav__toggle {
   width: 23px;
   height: 23px;
   font-size: 0;
@@ -106,16 +174,26 @@
   top: 15px;
   right: 15px;
   z-index: 5;
+
+  &::before {
+    font-size: 23px;
+    color: $white;
+  }
 }
 
-.main-nav__toggle--open::before {
-  font-size: 23px;
-  color: $half-baked;
-}
+.main-nav--closed .main-nav__toggle {
+  width: 23px;
+  height: 23px;
+  font-size: 0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
 
-.main-nav__toggle--close::before {
-  font-size: 23px;
-  color: $white;
+  &::before {
+    font-size: 23px;
+    color: $half-baked;
+  }
 }
 
 @media (min-width: $tablet-width) {
