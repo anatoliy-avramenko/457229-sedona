@@ -1,5 +1,5 @@
 .survey {
-  padding: 30px 20px;
+  padding: 30px 20px 50px;
   margin: 0 auto;
   background: $white;
   width: $mobile-width;
@@ -22,15 +22,16 @@
   line-height: 24px;
   font-weight: 700;
   color: $black;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   width: 100%;
   margin: 0 auto;
 }
 
 .survey__description {
   font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   width: 100%;
   margin: 0 auto;
 }
@@ -44,7 +45,6 @@
 
 .survey__button {
   width: 280px;
-  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {

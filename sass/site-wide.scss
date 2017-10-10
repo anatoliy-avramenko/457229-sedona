@@ -23,7 +23,6 @@
   transition: 0.4s;
   outline: none;
   text-transform: uppercase;
-  //text-align: center;
 }
 
 html,
@@ -40,6 +39,7 @@ body {
   min-width: 320px;
   background: $concrete;
   display: block;
+  margin: 0 auto;
 }
 
 .site-width {
@@ -70,7 +70,7 @@ body {
   color: $white;
   font-size: 21px;
   font-weight: 700;
-  padding: 20px;
+  padding: 15px;
   outline: none;
   border: none;
 }

@@ -6,22 +6,13 @@
   width: 320px;
   margin: 0 auto;
   background: $white;
-}
-
-@media (max-width: $tablet-width) {
-  .main-nav--opened .main-nav__list {
-    display: block;
-  }
-
-  .main-nav--closed .main-nav__list {
-    display: none;
-  }
+  transition: 0.4s;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 768px;
-    height: 56px;
+    max-height: 55px;
     background: $white;
   }
 }
@@ -35,6 +26,20 @@
 ///////////////////////////////////////////////
 //MAIN-NAV__LIST
 
+@media (max-width: $tablet-width) {
+  .main-nav--opened .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--nojs ul.main-nav__list {
+    display: block;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
@@ -42,20 +47,51 @@
   }
 }
 
+///////////////////////////////////////////////
+//MAIN-NAV__LINK
+
 .main-nav__link {
   font-size: 18px;
   font-weight: 700;
   color: $white;
+  transition: 0.4s;
+  display: block;
+  width: 100%;
+  line-height: 55px;
 }
 
-///////////////////////////////////////////////
-//MAIN-NAV__LINK
+@media (max-width: $tablet-width) {
+  .main-nav__item:active .main-nav__link,
+  .main-nav__link--active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
 
 @media (min-width: $tablet-width) {
   .main-nav__link {
     font-size: 14px;
-    line-height: 23px;
     color: $black;
+  }
+
+  .main-nav__link:hover {
+    color: $half-baked;
+  }
+
+  .main-nav__link:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__link--active {
+    color: $pine-cone;
+    cursor: pointer;
+  }
+
+  .main-nav__link--active:hover {
+    color: #604e43;
+  }
+
+  .main-nav__link--active:active {
+    color: rgba(118, 99, 87, 0.3);
   }
 }
 
@@ -64,10 +100,10 @@
 
 .main-nav__item {
   background: $half-baked;
-  padding: 15px;
   border-bottom: 1px solid $bermuda-gray;
   border-top: 1px solid $aqua-island;
   display: block;
+  transition: 0.4s;
 
   &:first-of-type {
     border-top: none;
@@ -79,24 +115,41 @@
   box-shadow: inset 0 -8px 7px -7px rgba(26, 37, 43, 0.4);
 }
 
-//ПОДУМАТЬ - нужно сделать меню флекс базис, как-то разбить всю ширину на две половины
+.main-nav__item--disabled {
+  background: $mercury;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav__item:hover {
+    background: $fountain-blue;
+  }
+
+  .main-nav__item:active,
+  .main-nav__item--active {
+    background: $steel-blue;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .main-nav__item {
     background: $white;
     border: none;
     padding: 0;
-    margin: 0 25px;
+    margin: 0 auto;
     line-height: 56px;
     box-shadow: none;
+    flex-basis: 25%;
+    flex-shrink: 1;
   }
 
   .main-nav__item:nth-of-type(2) {
-    margin-right: auto;
+    margin-right: 55px;
+    flex-shrink: 0;
   }
 
   .main-nav__item:nth-of-type(3) {
-    margin-left: auto;
+    margin-left: 55px;
+    flex-shrink: 0;
   }
 }
 
@@ -140,41 +193,22 @@
 ///////////////////////////////////////////////
 //MAIN-NAV__TOGGLE
 
-//.main-nav__toggle {
-//  width: 23px;
-//  height: 23px;
-//  font-size: 0;
-//  position: absolute;
-//  top: 15px;
-//  right: 15px;
-//  z-index: 5;
-//}
-//
-//.main-nav__toggle--open::before {
-//  font-size: 23px;
-//  color: $half-baked;
-//}
-//
-//.main-nav__toggle--close::before {
-//  font-size: 23px;
-//  color: $white;
-//}
-//
-//@media (min-width: $tablet-width) {
-//  .main-nav__toggle {
-//    display: none;
-//  }
-//}
-
-.main-nav--opened .main-nav__toggle {
+.main-nav__toggle {
   width: 23px;
   height: 23px;
   font-size: 0;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 16px;
+  right: 18px;
   z-index: 5;
+  cursor: pointer;
+}
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
   &::before {
     font-size: 23px;
     color: $white;
@@ -182,14 +216,6 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  width: 23px;
-  height: 23px;
-  font-size: 0;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 5;
-
   &::before {
     font-size: 23px;
     color: $half-baked;

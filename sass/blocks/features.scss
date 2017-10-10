@@ -26,7 +26,11 @@
 }
 
 .features__ul-list {
-  padding: 25px 20px 0;
+  padding: 28px 20px 20px;
+}
+
+.features__ul-list--low {
+  padding: 0 0 0 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -66,12 +70,18 @@
 //FEATURES__ITEM
 
 .features__item {
-  padding: 20px 20px 0 20px;
+  padding: 20px 25px 0;
   font-size: 0;
 }
 
+.features__item--detailed {
+  background: $half-baked;
+  color: $white;
+  padding: 40px 25px 0;
+}
+
 .features__item--arrowed {
-  padding-top: 40px;
+  padding: 70px 25px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,11 +90,6 @@
     padding: 0 0 0 0;
     height: 256px;
   }
-}
-
-.features__item--detailed {
-  background: $half-baked;
-  color: $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -99,7 +104,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 0 20px 0;
+  padding: 0 0 8px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -121,13 +126,14 @@
 .features__item--brief {
   background: $gallery;
   position: relative;
+  padding: 25px 25px 0;
 }
 
 .features__item--brief::after {
   content: "";
   position: absolute;
   border-bottom: 1px solid $alto;
-  width: 90%;
+  width: 87%;
   transform: translateX(-50%);
   bottom: 0;
   left: 50%;
@@ -149,8 +155,9 @@
 .features__title {
   font-size: 18px;
   font-weight: 700;
+  line-height: 26px;
   color: $black;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
   width: 100%;
 }
 
@@ -170,7 +177,7 @@
 
 .features__title--highlight {
   color: $white;
-  padding-top: 25px;
+  //padding-top: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -198,7 +205,7 @@
 
 .features__description--unordered {
   text-align: left;
-  padding: 10px 0 10px 50px;
+  padding: 8px 0 10px 50px;
   width: 100%;
 }
 
@@ -207,7 +214,7 @@
 }
 
 .features__description--number {
-  padding-bottom: 20px;
+  padding-bottom: 14px;
 }
 
 .features__description--number::after,
@@ -215,12 +222,16 @@
   content: " — ";
 }
 
+.features__description--brief {
+  padding-bottom: 30px;
+}
+
 ///////////////////////////////////////////////
 //FEATURES__COVER
 
 .features__cover {
   width: 320px;
-  margin: 0 -20px;
+  margin: 0 -25px;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'sedona-icons';
-  src:  url('fonts/sedona-icons.eot?4d0jwm');
-  src:  url('fonts/sedona-icons.eot?4d0jwm#iefix') format('embedded-opentype'),
-    url('fonts/sedona-icons.ttf?4d0jwm') format('truetype'),
-    url('fonts/sedona-icons.woff?4d0jwm') format('woff'),
-    url('fonts/sedona-icons.svg?4d0jwm#sedona-icons') format('svg');
+  src:  url('fonts/sedona-icons.eot?r21ra1');
+  src:  url('fonts/sedona-icons.eot?r21ra1#iefix') format('embedded-opentype'),
+    url('fonts/sedona-icons.ttf?r21ra1') format('truetype'),
+    url('fonts/sedona-icons.woff?r21ra1') format('woff'),
+    url('fonts/sedona-icons.svg?r21ra1#sedona-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'sedona-icons';
+  font-family: 'sedona-icons' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-youtube:before {
+  content: "\e911";
+}
 .icon-htmlacademy:before {
   content: "\e910";
 }
