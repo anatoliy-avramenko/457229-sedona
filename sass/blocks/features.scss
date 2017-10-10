@@ -63,6 +63,7 @@
 @media (min-width: $desktop-width) {
   .features__contents {
     width: 400px;
+    padding: 55px;
   }
 }
 
@@ -90,6 +91,16 @@
     padding: 0 0 0 0;
     height: 256px;
   }
+
+  .features__item--gifts {
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item--detailed {
+    display: flex;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -107,27 +118,44 @@
   padding: 0 0 8px 0;
 }
 
+.features__item--brief {
+  background: $gallery;
+  position: relative;
+  padding: 25px 25px 0;
+}
+
 @media (min-width: $tablet-width) {
   .features__item--unordered,
   .features__item--brief {
     padding: 60px 45px;
     height: 100%;
     width: 256px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__item--brief {
+    padding: 45px 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .features__item--unordered,
-  .features__item--brief {
+  .features__item--unordered {
     width: 400px;
+    padding: 60px 50px 80px;
   }
 }
 
-.features__item--brief {
-  background: $gallery;
-  position: relative;
-  padding: 25px 25px 0;
+@media (min-width: $desktop-width) {
+  .features__item--brief {
+    width: 400px;
+    padding: 45px 50px 70px;
+  }
 }
+
 
 .features__item--brief::after {
   content: "";
@@ -170,14 +198,18 @@
 @media (min-width: $tablet-width) {
   .features__title,
   .features__title--unordered {
-    width: 134px;
+    width: 151px;
     text-align: center;
+    font-size: 21px;
+  }
+
+  .features__title--unordered {
+    margin: 0 0 0 0;
   }
 }
 
 .features__title--highlight {
   color: $white;
-  //padding-top: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -201,6 +233,10 @@
   .features__description {
     padding-bottom: 0;
   }
+
+  .features__description--number {
+    padding-bottom: 20px;
+  }
 }
 
 .features__description--unordered {
@@ -209,12 +245,25 @@
   width: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .features__description--unordered {
+    padding: 0 0 0 0;
+    text-align: center;
+  }
+}
+
 .features__description--highlight {
   color: $white;
 }
 
 .features__description--number {
   padding-bottom: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__description--number {
+    padding-bottom: 20px;
+  }
 }
 
 .features__description--number::after,
@@ -248,4 +297,10 @@
 .features__icon::before {
   font-size: 40px;
   color: $half-baked;
+}
+
+@media (min-width: $tablet-width) {
+  .features__icon::before {
+    font-size: 75px;
+  }
 }

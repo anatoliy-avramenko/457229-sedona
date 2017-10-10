@@ -8,12 +8,14 @@
 @media (min-width: $tablet-width) {
   .survey {
     width: $tablet-width;
+    padding: 55px 20px 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .survey {
     width: $desktop-width;
+    padding: 55px 20px 65px;
   }
 }
 
@@ -27,6 +29,14 @@
   margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+  .survey__title {
+    width: 458px;
+    font-size: 30px;
+    padding-bottom: 32px;
+  }
+}
+
 .survey__description {
   font-size: 14px;
   line-height: 24px;
@@ -37,9 +47,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .survey__title,
   .survey__description {
     width: 458px;
+    padding-bottom: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .survey__description {
+    padding-bottom: 45px;
   }
 }
 
