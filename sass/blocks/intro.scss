@@ -1,3 +1,6 @@
+///////////////////////////////////////////////
+//INTRO
+
 .intro {
   padding: 44px 30px 14px;
   margin: 0 auto;
@@ -19,26 +22,20 @@
   }
 }
 
-.intro__title {
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 26px;
-  color: $black;
-  font-weight: 700;
-  margin-bottom: 24px;
+.intro--photo {
+  padding: 40px 25px 24px;
 }
 
 @media (min-width: $tablet-width) {
-  .intro__title {
-    width: 460px;
-    font-size: 21px;
+  .intro--photo {
+    padding: 75px 165px 68px;
   }
 }
 
-.intro__description {
-  font-size: 14px;
-  line-height: 26px;
-  color: $mine-shaft;
+@media (min-width: $desktop-width) {
+  .intro--photo {
+    padding: 112px 385px 69px;
+  }
 }
 
 .intro--home::after {
@@ -59,4 +56,49 @@
   .intro::after {
     display: none;
   }
+}
+
+///////////////////////////////////////////////
+//INTRO__TITLE
+
+.intro__title {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title {
+    width: 460px;
+    font-size: 21px;
+  }
+}
+
+.intro__title--photo {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title--photo {
+    font-size: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+///////////////////////////////////////////////
+//INTRO__DESCRIPTION
+
+.intro__description {
+  font-size: 14px;
+  line-height: 26px;
+  color: $mine-shaft;
+}
+
+.intro__description--photo {
+  line-height: 25px;
 }

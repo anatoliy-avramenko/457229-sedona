@@ -1,3 +1,6 @@
+///////////////////////////////////////////////
+//PHOTOS
+
 .photos {
   margin: 0 auto;
   width: $mobile-width;
@@ -16,8 +19,11 @@
   }
 }
 
+///////////////////////////////////////////////
+//PHOTOS__ITEM
+
 .photos__item {
-  padding: 20px;
+  padding: 21px 20px 16px;
   width: 100%;
 }
 
@@ -42,6 +48,9 @@
   }
 }
 
+///////////////////////////////////////////////
+//PHOTOS__LIST
+
 .photos__list {
   list-style: none;
   margin: 0 auto;
@@ -61,12 +70,15 @@
   }
 }
 
+///////////////////////////////////////////////
+//PHOTOS__TITLE
+
 .photos__title {
   font-size: 14px;
   font-weight: 700;
   color: $black;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 @media (min-width: $desktop-width) {
@@ -74,6 +86,9 @@
     color: $white;
   }
 }
+
+///////////////////////////////////////////////
+//PHOTOS__CAPTION
 
 .photos__caption {
   text-align: left;
@@ -83,11 +98,23 @@
   .photos__caption {
     background: $concrete;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 19px 30px 9px 20px;
+  }
+
+  .photos__caption--large {
+    padding: 19px 20px 9px 20px;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .photos__caption:hover {
+    background: $gallery;
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .photos__caption {
@@ -99,6 +126,9 @@
   }
 }
 
+///////////////////////////////////////////////
+//PHOTOS__AUTHOR
+
 .photos__author {
   font-size: 14px;
   color: $mine-shaft;
@@ -107,7 +137,7 @@
   margin-bottom: 10px;
 
   &::before {
-    content: "Автор: ";
+    content: "Автор фото: ";
   }
 }
 
@@ -117,27 +147,25 @@
   }
 }
 
+///////////////////////////////////////////////
+//PHOTOS__LIKES
+
 .photos__likes {
   display: inline-block;
   font-size: 14px;
+  line-height: 24px;
   font-weight: 700;
   color: $black;
   text-align: left;
-  padding-left: 35px;
+  padding-left: 8px;
   position: relative;
+  bottom: 2px;
 }
 
-.photos__upvotes::before {
-  display: inline-block;
-  color: $silver-chalice;
-  font-size: 23px;
-  text-align: left;
-}
-
-@media (min-width: $desktop-width) {
-  .photos__upvotes::before {
-    color: $white;
-    margin: 0 auto;
+@media (min-width: $tablet-width) {
+  .photos__likes--highlighted {
+    position: relative;
+    right: 5px;
   }
 }
 
@@ -147,16 +175,61 @@
   }
 }
 
+///////////////////////////////////////////////
+//PHOTOS__UPVOTES
+
+.photos__upvotes::before {
+  display: inline-block;
+  color: $silver-chalice;
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__upvotes {
+    margin-left: auto;
+  }
+
+  .photos__upvotes--highlighted {
+    position: relative;
+    right: 5px;
+  }
+
+  .photos__upvotes::before {
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__upvotes::before {
+    color: $white;
+    margin: 0 auto;
+  }
+}
+
+///////////////////////////////////////////////
+//PHOTOS__IMAGE
+
 .photos__image {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .photos__image {
     margin-bottom: 0;
+    height: 267px;
+  }
+
+  .photos__image--large {
+    height: 400px;
   }
 }
+
+///////////////////////////////////////////////
+//PHOTOS__FULLSIZE
 
 .photos__fullsize {
   font-size: 0;

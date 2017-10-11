@@ -1,0 +1,105 @@
+.video__wrapper {
+  font-size: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .video__wrapper {
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__wrapper {
+    width: 800px;
+  }
+}
+
+.video__item {
+  margin: 0 -30px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__item {
+    width: 648px;
+    height: 500px;
+    margin: 0 auto;
+
+    //temporary
+    border: 1px solid grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__item {
+    width: 800px;
+  }
+}
+
+//позже добавить progress bar
+
+.video__controls {
+  position: relative;
+  //margin: 0 auto;
+}
+
+//.video__seek-bar {
+//  position: absolute;
+//  //width: 100%;
+//  bottom: 66px;
+//}
+
+.video__buttons-set {
+  height: 66px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: $concrete;
+  padding: 0 23px;
+  margin: 0 -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__buttons-set {
+    height: 93px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    margin: 0 0;
+    padding: 0 40px 0 35px;
+  }
+}
+
+//@media (min-width: $desktop-width) {
+//  .video__buttons-set {
+//    height: 90px;
+//    background: rgba(0, 0, 0, 0.6);
+//    position: absolute;
+//    bottom: 100%;
+//    width: 100%;
+//    margin: 0 0;
+//    padding: 0 40px 0 35px;
+//  }
+//}
+
+.video__button::before {
+  color: $shuttle-gray;
+  font-size: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__button::before {
+    color: $white;
+  }
+}
+
+.video__button:nth-of-type(1) {
+  margin-right: auto;
+}
+
+.video__button:nth-of-type(3)::before {
+  margin-left: 30px;
+}
+
