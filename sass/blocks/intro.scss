@@ -38,6 +38,10 @@
   }
 }
 
+.intro--form {
+  padding: 39px 22px 17px;
+}
+
 .intro--home::after {
   content: "";
   position: absolute;
@@ -90,6 +94,10 @@
   }
 }
 
+.intro__title--form {
+  margin-bottom: 27px;
+}
+
 ///////////////////////////////////////////////
 //INTRO__DESCRIPTION
 
@@ -99,6 +107,6 @@
   color: $mine-shaft;
 }
 
-.intro__description--photo {
-  line-height: 25px;
+.intro__description--form {
+  line-height: 24px;
 }

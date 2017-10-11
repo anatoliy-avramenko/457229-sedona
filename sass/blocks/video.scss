@@ -84,9 +84,15 @@
 //  }
 //}
 
+.video__button {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
 .video__button::before {
   color: $shuttle-gray;
   font-size: 21px;
+  transition: 0.4s;
 }
 
 @media (min-width: $tablet-width) {
@@ -103,3 +109,10 @@
   margin-left: 30px;
 }
 
+.video__button:hover::before {
+  color: $mine-shaft;
+}
+
+.video__button:active::before {
+  color: $silver;
+}
