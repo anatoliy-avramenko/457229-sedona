@@ -51,7 +51,7 @@
           <form action="https://echo.htmlacademy.ru" method="post" class="feedback site-form">
 
             <div class="feedback__questions-set feedback__questions-set--text separator">
-              <h3 class="feedback__title">Представьтесь:</h3>
+              <h3 class="feedback__title feedback__title--text">Представьтесь:</h3>
                 <div class="feedback__item feedback__item--text">
                   <label for="name" class="feedback__question feedback__question--text">Имя*:</label>
                   <input type="text" id="name" class="feedback__answer feedback__answer--text" placeholder="Петр" required>
@@ -69,7 +69,7 @@
             </div>
 
             <div class="feedback__questions-set feedback__questions-set--misc separator">
-              <h3 class="feedback__title feedback__title--misc">Контактная информация:</h3>
+              <h3 class="feedback__title feedback__title--separator feedback__title--misc">Контактная информация:</h3>
               <div class="feedback__item feedback__item--misc">
                 <label for="phone" class="feedback__question feedback__question--misc">Контактный телефон*:</label>
                 <div class="feedback__answer__wrapper feedback__answer__wrapper--tel">
@@ -101,34 +101,36 @@
             </div>
 
             <div class="feedback__questions-set feedback__questions-set--check separator">
-              <h3 class="feedback__title feedback__title--check">Посещенные достопримечательности:</h3>
-              <div class="feedback__item feedback__item--check">
-                <input type="checkbox" id="attr-1" name="attractions" class="feedback__answer feedback__answer--check">
-                <label for="attr-1" class="feedback__question feedback__question--check">Мост Дьявола</label>
-              </div>
-              <div class="feedback__item feedback__item--check">
-                <input type="checkbox" id="attr-2" name="attractions" class="feedback__answer feedback__answer--check">
-                <label for="attr-2" class="feedback__question feedback__question--check">Слайд-парк</label>
-              </div>
-              <div class="feedback__item feedback__item--check">
-                <input type="checkbox" id="attr-3" name="attractions" class="feedback__answer feedback__answer--check">
-                <label for="attr-3" class="feedback__question feedback__question--check">Гора-Колокол</label>
-              </div>
-              <div class="feedback__item feedback__item--check">
-                <input type="checkbox" id="attr-4" name="attractions" class="feedback__answer feedback__answer--check">
-                <label for="attr-4" class="feedback__question feedback__question--check">Красные скалы</label>
+              <h3 class="feedback__title feedback__title--separator feedback__title--check">Посещенные достопримечательности:</h3>
+              <div class="feedback__items-wrapper">
+                <div class="feedback__item feedback__item--check">
+                  <input type="checkbox" id="attr-1" name="attractions" class="feedback__answer feedback__answer--check">
+                  <label for="attr-1" class="feedback__question feedback__question--check">Мост Дьявола</label>
+                </div>
+                <div class="feedback__item feedback__item--check">
+                  <input type="checkbox" id="attr-2" name="attractions" class="feedback__answer feedback__answer--check">
+                  <label for="attr-2" class="feedback__question feedback__question--check">Слайд-парк</label>
+                </div>
+                <div class="feedback__item feedback__item--check">
+                  <input type="checkbox" id="attr-3" name="attractions" class="feedback__answer feedback__answer--check">
+                  <label for="attr-3" class="feedback__question feedback__question--check">Гора-Колокол</label>
+                </div>
+                <div class="feedback__item feedback__item--check">
+                  <input type="checkbox" id="attr-4" name="attractions" class="feedback__answer feedback__answer--check">
+                  <label for="attr-4" class="feedback__question feedback__question--check">Красные скалы</label>
+                </div>
               </div>
             </div>
 
             <div class="feedback__questions-set feedback__questions-set--textarea">
-              <h3 class="feedback__title">Опишите свои эмоции:</h3>
+              <h3 class="feedback__title feedback__title--separator feedback__title--textarea">Опишите свои эмоции:</h3>
               <div class="feedback__item feedback__item--textarea">
                 <textarea name="emotions" id="emotions" cols="30" rows="6" class="feedback__answer feedback__answer--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </div>
 
             <div class="feedback__completion">
-              <button type="submit" class="site-button feedback-button">Отправить отзыв</button>
+              <button type="submit" class="site-button feedback__button">Отправить отзыв</button>
               <aside class="feedback__legend">* — Обязательные поля</aside>
             </div>
 

@@ -12,6 +12,8 @@
     width: $tablet-width;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 60px;
   }
 }
 
@@ -32,9 +34,24 @@
   order: 1;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback__questions-set--text {
+    width: 324px;
+    padding: 0 0 0 55px;
+  }
+}
+
 .feedback__questions-set--radio {
-  padding: 19px 20px 21px;
+  padding: 19px 20px 29px;
   order: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__questions-set--radio {
+    width: 324px;
+    padding: 0 50px 0 0;
+    border-right: 1px solid $alto;
+  }
 }
 
 .feedback__questions-set--misc {
@@ -42,10 +59,22 @@
   width: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback__questions-set--misc {
+    padding: 70px 0 34px;
+  }
+}
+
 .feedback__questions-set--check {
-  padding: 19px 20px 14px;
+  padding: 19px 20px 27px;
   order: 4;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__questions-set--check {
+    padding: 19px 0 0;
+  }
 }
 
 .feedback__questions-set--textarea {
@@ -53,22 +82,26 @@
   width: 100%;
 }
 
-///////////////////////////////////////////////
-//FEEDBACK__COMPLETION
-
-.feedback__completion {
-  order: 6;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (min-width: $tablet-width) {
+  .feedback__questions-set--textarea {
+    padding: 14px 0 36px;
+  }
 }
 
 ///////////////////////////////////////////////
-//FEEDBACK__LEGEND
+//FEEDBACK__ITEMS-WRAPPER
 
-.feedback__legend {
-  font-size: 14px;
+@media (min-width: $tablet-width) {
+  .feedback__items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    left: 30px;
+  }
 }
 
 ///////////////////////////////////////////////
@@ -79,20 +112,95 @@
   line-height: 26px;
   font-weight: 700;
   color: $black;
-  margin-bottom: 19px;
+  margin: 0 0 19px 0;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title {
+    font-size: 21px;
+  }
 }
 
 .feedback__title--misc {
-  margin-bottom: 23px;
+  margin: 0 0 23px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title--misc {
+    margin: 0 0 29px 0;
+  }
+}
+
+.feedback__title--separator::before,
+.feedback__title--separator::after {
+  content: "";
+  display: none;
+  height: 1px;
+  width: 125px;
+  background: $alto;
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title--separator::after,
+  .feedback__title--separator::before {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title--separator::after {
+    left: auto;
+    right: 0;
+  }
+}
+
+.feedback__title--check {
+  margin: 0 0 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title--check {
+    padding: 0 120px;
+    margin: 0 0 41px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title--check::after,
+  .feedback__title--check::before {
+    top: 25px;
+  }
 }
 
 .feedback__title--radio {
-  margin-bottom: 16px;
+  margin: 0 0 21px 0;
 }
 
-@media (max-width: $tablet-width) {
-  .feedback__title--check {
-    margin-bottom: 0;
+@media (min-width: $tablet-width) {
+  .feedback__title--radio {
+    text-align: left;
+    margin: 0 0 58px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title--text {
+    text-align: left;
+    margin: 0 0 56px 0;
+  }
+}
+
+.feedback__title--textarea {
+  margin: 0 0 14px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title--textarea {
+    margin: 0 0 52px 0;
   }
 }
 
@@ -118,13 +226,36 @@
   margin: 0 0 17px 0;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback__item--misc {
+    margin: 0 0 26px 0;
+  }
+}
+
 .feedback__item--radio,
 .feedback__item--check {
   justify-content: flex-start;
-  margin: 0 0 0 0;
+  margin: 0 0 13px 0;
 
   &:last-of-type {
     margin: 0 0 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__item--radio {
+    margin: 0 0 21px 0;
+  }
+}
+
+.feedback__item--check {
+  margin: 0 0 24px 0;
+  width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__item--check {
+    margin: 0 0 32px 0;
   }
 }
 
@@ -153,6 +284,8 @@
 
 .feedback__answer--textarea {
   resize: none;
+  padding: 20px 20px 18px 20px;
+  height: 118px;
 }
 
 .feedback__answer:focus::-webkit-input-placeholder {
@@ -176,6 +309,7 @@
 .feedback__question--radio,
 .feedback__question--check {
   font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
   text-transform: none;
   color: $black;
@@ -186,7 +320,11 @@
 }
 
 .feedback__question--check {
-  padding: 32px 0 26px 80px;
+  padding: 15px 0 15px 80px;
+}
+
+.feedback__question--radio {
+  padding: 15px 0 15px 80px;
 }
 
 .feedback__answer--radio,
@@ -204,7 +342,7 @@
     height: 56px;
     position: absolute;
     left: 0;
-    top: 7px;
+    top: 0;
   }
 
   &:checked + .feedback__question--radio::after {
@@ -228,18 +366,18 @@
     height: 56px;
     position: absolute;
     left: 0;
-    top: 18px;
+    top: 0;
   }
 
   &:checked + .feedback__question--check::after {
     content: "";
     display: block;
-    background: url("../../img/icon-tick.svg") no-repeat;
+    background: url("#{$path-to-img}/icon-tick.svg") no-repeat;
     width: 24px;
     height: 16px;
     position: absolute;
     left: 18px;
-    top: 38px;
+    top: 20px;
   }
 }
 
@@ -285,8 +423,47 @@
 }
 
 ///////////////////////////////////////////////
+//FEEDBACK__COMPLETION
+
+.feedback__completion {
+  order: 6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 68px 20px 43px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__completion {
+    padding: 68px 0 63px;
+    justify-content: space-between;
+  }
+}
+
+///////////////////////////////////////////////
 //FEEDBACK__BUTTON
 
-.feedback-button {
-  margin: 30px 0 15px;
+.feedback__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__button {
+    width: 324px;
+  }
+}
+
+///////////////////////////////////////////////
+//FEEDBACK__LEGEND
+
+.feedback__legend {
+  font-size: 14px;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__legend {
+    display: block;
+  }
 }
