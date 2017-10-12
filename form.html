@@ -70,16 +70,18 @@
 
             <div class="feedback__questions-set feedback__questions-set--misc separator">
               <h3 class="feedback__title feedback__title--separator feedback__title--misc">Контактная информация:</h3>
-              <div class="feedback__item feedback__item--misc">
-                <label for="phone" class="feedback__question feedback__question--misc">Контактный телефон*:</label>
-                <div class="feedback__answer__wrapper feedback__answer__wrapper--tel">
-                  <input type="tel" id="phone" class="feedback__answer feedback__answer--misc" placeholder="Введите телефон" pattern="^\d{4}-\d{3}-\d{4}$" required>
+              <div class="feedback__items-wrapper feedback__items-wrapper--misc">
+                <div class="feedback__item feedback__item--misc">
+                  <label for="phone" class="feedback__question feedback__question--misc"><span class="feedback__hidden">Контактный</span> телефон*:</label>
+                  <div class="feedback__answer__wrapper feedback__answer__wrapper--tel">
+                    <input type="tel" id="phone" class="feedback__answer feedback__answer--misc" placeholder="Введите телефон" required>
+                  </div>
                 </div>
-              </div>
-              <div class="feedback__item feedback__item--misc">
-                <label for="email" class="feedback__question feedback__question--misc">Электронная почта*:</label>
-                <div class="feedback__answer__wrapper feedback__answer__wrapper--email">
-                  <input type="email" id="email" class="feedback__answer feedback__answer--misc" placeholder="Введите e-mail" required>
+                <div class="feedback__item feedback__item--misc">
+                  <label for="email" class="feedback__question feedback__question--misc">Электронная почта*:</label>
+                  <div class="feedback__answer__wrapper feedback__answer__wrapper--email">
+                    <input type="email" id="email" class="feedback__answer feedback__answer--misc" placeholder="Введите e-mail" required>
+                  </div>
                 </div>
               </div>
             </div>
@@ -102,7 +104,7 @@
 
             <div class="feedback__questions-set feedback__questions-set--check separator">
               <h3 class="feedback__title feedback__title--separator feedback__title--check">Посещенные достопримечательности:</h3>
-              <div class="feedback__items-wrapper">
+              <div class="feedback__items-wrapper feedback__items-wrapper--check">
                 <div class="feedback__item feedback__item--check">
                   <input type="checkbox" id="attr-1" name="attractions" class="feedback__answer feedback__answer--check">
                   <label for="attr-1" class="feedback__question feedback__question--check">Мост Дьявола</label>

@@ -8,13 +8,13 @@
 
 @media (min-width: $tablet-width) {
   .subheader {
-    height: 190px;
+    height: 289px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .subheader {
-    height: 289px;
+    height: 300px;
   }
 }
 

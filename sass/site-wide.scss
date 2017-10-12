@@ -47,6 +47,13 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: $desktop-width) {
+  .site-width {
+    width: $desktop-width;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -73,6 +80,7 @@ body {
   padding: 15px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .separator {
