@@ -118,9 +118,12 @@
                 <source src="http://placehold.it/150x100.ogg" type="video/ogg">
               </video>
               <div class="video__controls">
-                <!--<label for="seek-bar"><input type="range" class="video__seek-bar" id="seek-bar" value="0"></label>-->
                 <div class="video__buttons-set">
-                  <button class="video__button btn-normalize icon-video-replay"><span class="visually-hidden">Replay</span></button>
+                  <div class="video__seek-bar">
+                    <div class="video__length"></div>
+                    <div class="video__current"></div>
+                  </div>
+                  <button class="video__button video__button--replay btn-normalize icon-video-replay"><span class="visually-hidden">Replay</span></button>
                   <button class="video__button btn-normalize icon-video-subtitles"><span class="visually-hidden">Субтитры</span></button>
                   <button class="video__button btn-normalize icon-video-fullscreen"><span class="visually-hidden">На весь экран</span></button>
                 </div>

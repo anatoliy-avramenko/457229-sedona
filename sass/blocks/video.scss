@@ -37,27 +37,83 @@
   }
 }
 
-//позже добавить progress bar
-
 .video__controls {
   position: relative;
-  //margin: 0 auto;
 }
 
-//.video__seek-bar {
-//  position: absolute;
-//  //width: 100%;
-//  bottom: 66px;
-//}
+.video__seek-bar {
+  background: rgba(0, 0, 0, 0.6);
+  height: 45px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  padding: 0 22px;
+  z-index: 2;
+}
+
+@media (min-width: $tablet-width) {
+  .video__seek-bar {
+    background: rgba(0, 0, 0, 0);
+    padding: 0 0;
+    height: 3px;
+    width: 387px;
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__seek-bar {
+    width: 540px;
+  }
+}
+
+.video__length {
+  display: block;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 21px 0 0;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .video__length {
+    margin: 0 0 0;
+  }
+}
+
+.video__current {
+  display: block;
+  background: $white;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  position: absolute;
+  bottom: 18px;
+  left: 78px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .video__current {
+    position: absolute;
+    bottom: -3px;
+    left: 70px;
+  }
+}
 
 .video__buttons-set {
   height: 66px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   background: $concrete;
   padding: 0 23px;
-  margin: 0 -5px;
+  margin: 0 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,6 +121,7 @@
     height: 93px;
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
+    justify-content: space-between;
     bottom: 100%;
     width: 100%;
     margin: 0 0;
@@ -72,21 +129,13 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-//  .video__buttons-set {
-//    height: 90px;
-//    background: rgba(0, 0, 0, 0.6);
-//    position: absolute;
-//    bottom: 100%;
-//    width: 100%;
-//    margin: 0 0;
-//    padding: 0 40px 0 35px;
-//  }
-//}
-
 .video__button {
   cursor: pointer;
   transition: 0.4s;
+}
+
+.video__button--replay {
+  order: -1;
 }
 
 .video__button::before {
@@ -105,8 +154,25 @@
   margin-right: auto;
 }
 
+@media (min-width: $tablet-width) {
+  .video__button:nth-of-type(1) {
+    margin-right: 0;
+  }
+}
+
 .video__button:nth-of-type(3)::before {
   margin-left: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__button:nth-of-type(3)::before {
+    margin-left: 0;
+  }
+
+  .video__button:nth-of-type(2)::before {
+    position: relative;
+    left: 10px;
+  }
 }
 
 .video__button:hover::before {
