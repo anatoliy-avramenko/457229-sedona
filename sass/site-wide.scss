@@ -1,15 +1,15 @@
-$half-baked: #81b3d2;
-$bermuda-gray: #678fa8;
-$mine-shaft: #333333;
-$white: #ffffff;
-$black: #000000;
-$gallery: #eeeeee;
-$alto: #d6d6d6;
-$silver-chalice: #b2b2b2;
-$concrete: #f2f2f2;
-$mercury: #e6e6e6;
-$tablet-width: 768px;
-$desktop-width: 1200px;
+//$half-baked: #81b3d2;
+//$bermuda-gray: #678fa8;
+//$mine-shaft: #333333;
+//$white: #ffffff;
+//$black: #000000;
+//$gallery: #eeeeee;
+//$alto: #d6d6d6;
+//$silver-chalice: #b2b2b2;
+//$concrete: #f2f2f2;
+//$mercury: #e6e6e6;
+//$tablet-width: 768px;
+//$desktop-width: 1200px;
 
 * {
   padding: 0;
@@ -23,7 +23,6 @@ $desktop-width: 1200px;
   transition: 0.4s;
   outline: none;
   text-transform: uppercase;
-  //text-align: center;
 }
 
 html,
@@ -40,11 +39,23 @@ body {
   min-width: 320px;
   background: $concrete;
   display: block;
+  margin: 0 auto;
+}
+
+.page-main {
+  position: relative;
 }
 
 .site-width {
   text-align: center;
   margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  .site-width {
+    width: $desktop-width;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .visually-hidden {
@@ -70,9 +81,10 @@ body {
   color: $white;
   font-size: 21px;
   font-weight: 700;
-  padding: 20px;
+  padding: 15px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .separator {

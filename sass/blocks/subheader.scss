@@ -1,15 +1,18 @@
+///////////////////////////////////////////////
+//SUBHEADER
+
 .subheader {
   position: relative;
-  height: 160px;
+  height: 157px;
 }
 
 @media (min-width: $tablet-width) {
   .subheader {
-    height: 190px;
+    height: 289px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .subheader {
     height: 300px;
   }
@@ -72,12 +75,11 @@
   }
 }
 
+///////////////////////////////////////////////
+//SUBHEADER__COVER
+
 .subheader__cover {
   display: block;
-  //text-align: center;
-  //vertical-align: bottom;
-  //height: 768px;
-  //width: 389px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -99,10 +101,13 @@
   }
 }
 
+///////////////////////////////////////////////
+//SUBHEADER__TITLE
+
 .subheader__title {
   position: absolute;
-  top: 50px;
-  bottom: 70px;
+  top: 52px;
+  bottom: 66px;
   left: 0;
   right: 0;
   background-image: url("#{$path-to-img}/text-sedona.svg");
@@ -122,7 +127,7 @@
 
 @media (min-width: $desktop-width) {
   .subheader__title {
-    top: 105px;
+    top: 100px;
     bottom: 120px;
   }
 }

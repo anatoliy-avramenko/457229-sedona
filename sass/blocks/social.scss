@@ -1,19 +1,33 @@
 .social__list {
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .social__button {
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 48px;
   padding: 0;
   margin: 0 4px 0;
+  transition: 0.4s;
 }
 
-.social__icon {
-  width: 25px;
-  height: 25px;
-  fill: $white;
-  background: $half-baked;
+.social__button:hover {
+  background: $fountain-blue;
+}
+
+.social__button:active {
+  background: $steel-blue;
+}
+
+.social__button::before {
+  font-size: 20px;
+  line-height: 48px;
+  vertical-align: middle;
+  color: $white;
+  transition: 0.4s;
+}
+
+.social__button:active::before {
+  color: $half-baked;
 }

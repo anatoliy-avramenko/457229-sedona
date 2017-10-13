@@ -1,5 +1,8 @@
+///////////////////////////////////////////////
+//SURVEY
+
 .survey {
-  padding: 30px 20px;
+  padding: 30px 20px 50px;
   margin: 0 auto;
   background: $white;
   width: $mobile-width;
@@ -8,65 +11,111 @@
 @media (min-width: $tablet-width) {
   .survey {
     width: $tablet-width;
+    padding: 55px 20px 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .survey {
     width: $desktop-width;
+    padding: 55px 20px 65px;
   }
 }
+
+.survey--photo {
+  padding: 32px 25px 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .survey--photo {
+    padding: 66px 25px 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .survey--photo {
+    padding: 70px 25px 86px;
+  }
+}
+
+///////////////////////////////////////////////
+//SURVEY__TITLE
 
 .survey__title {
   font-size: 21px;
   line-height: 24px;
   font-weight: 700;
   color: $black;
-  padding-bottom: 25px;
+  margin: 0 auto 20px;
   width: 100%;
-  margin: 0 auto;
-}
-
-.survey__description {
-  font-size: 14px;
-  font-weight: 400;
-  padding-bottom: 40px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .survey__title,
-  .survey__description {
+  .survey__title {
     width: 458px;
+    font-size: 30px;
+    margin-bottom: 32px;
   }
 }
 
+.survey__title--photo {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 auto 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .survey__title--photo {
+    font-size: 30px;
+    margin: 0 auto 30px;
+  }
+}
+
+///////////////////////////////////////////////
+//SURVEY__DESCRIPTION
+
+.survey__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0 auto 35px;
+}
+
+.survey__description--photo {
+  margin: 0 auto 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .survey__description {
+    width: 458px;
+    padding-bottom: 42px;
+  }
+
+  .survey__description--photo {
+    width: 440px;
+    margin: 0 auto 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .survey__description {
+    padding-bottom: 45px;
+  }
+
+  .survey__description--photo {
+    margin: 0 auto 27px;
+  }
+}
+
+///////////////////////////////////////////////
+//SURVEY__BUTTON
+
 .survey__button {
   width: 280px;
-  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .survey__button {
     width: 458px;
-  }
-}
-
-//для видео убрать controls и создать кастомные
-.survey__video {
-  margin: 0 -30px;
-}
-
-@media (min-width: $tablet-width) {
-  .survey__video {
-    width: 648px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .survey__video {
-    width: 800px;
   }
 }

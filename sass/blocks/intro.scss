@@ -1,5 +1,8 @@
+///////////////////////////////////////////////
+//INTRO
+
 .intro {
-  padding: 50px 20px 20px;
+  padding: 44px 30px 14px;
   margin: 0 auto;
   width: $mobile-width;
   background: $white;
@@ -16,41 +19,62 @@
 @media (min-width: $desktop-width) {
   .intro {
     width: $desktop-width;
+    padding: 50px 20px 50px;
   }
 }
 
-.intro__title {
-  margin: 0 auto;
-  font-size: 18px;
-  color: $black;
-  font-weight: 700;
-  margin-bottom: 20px;
+/////////////
+//INTRO--PHOTO
+
+.intro--photo {
+  padding: 40px 25px 24px;
 }
 
 @media (min-width: $tablet-width) {
-  .intro__title {
-    width: 460px;
+  .intro--photo {
+    padding: 75px 165px 67px;
   }
 }
 
-.intro__description {
-  font-size: 14px;
-  color: $mine-shaft;
+@media (min-width: $desktop-width) {
+  .intro--photo {
+    padding: 112px 385px 69px;
+  }
 }
+
+/////////////
+//INTRO--FORM
+
+.intro--form {
+  padding: 39px 22px 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro--form {
+    padding: 75px 165px 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro--form {
+    padding: 112px 377px 60px;
+  }
+}
+
+/////////////
+//INTRO--HOME
 
 .intro--home::after {
   content: "";
   position: absolute;
   background-image: url("#{$path-to-img}/bg-triangle.svg");
   background-repeat: no-repeat;
-  //background-position: center top;
   background-attachment: initial;
   background-size: cover;
   width: 320px;
   height: 37px;
-  bottom: -36px;
+  bottom: -30px;
   left: 0;
-  //margin: 0 auto;
   z-index: 1;
 }
 
@@ -58,4 +82,54 @@
   .intro::after {
     display: none;
   }
+}
+
+///////////////////////////////////////////////
+//INTRO__TITLE
+
+.intro__title {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title {
+    width: 460px;
+    font-size: 21px;
+  }
+}
+
+.intro__title--photo {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.intro__title--form {
+  margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title--photo,
+  .intro__title--form {
+    font-size: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+///////////////////////////////////////////////
+//INTRO__DESCRIPTION
+
+.intro__description {
+  font-size: 14px;
+  line-height: 26px;
+  color: $mine-shaft;
+}
+
+.intro__description--form {
+  line-height: 24px;
 }

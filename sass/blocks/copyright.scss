@@ -2,7 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 43px;
+  margin: 0 0 43px 0;
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__wrapper {
+    position: relative;
+    left: 85px;
+  }
 }
 
 .copyright__logo {
@@ -20,4 +27,12 @@
 .copyright__icon::before {
   font-size: 34px;
   color: $black;
+}
+
+.copyright__wrapper:hover .copyright__icon::before {
+  color: $half-baked;
+}
+
+.copyright__wrapper:active .copyright__icon::before {
+  color: $silver-chalice;
 }
