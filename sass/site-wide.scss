@@ -1,15 +1,16 @@
-//$half-baked: #81b3d2;
-//$bermuda-gray: #678fa8;
-//$mine-shaft: #333333;
-//$white: #ffffff;
-//$black: #000000;
-//$gallery: #eeeeee;
-//$alto: #d6d6d6;
-//$silver-chalice: #b2b2b2;
-//$concrete: #f2f2f2;
-//$mercury: #e6e6e6;
-//$tablet-width: 768px;
-//$desktop-width: 1200px;
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+}
 
 * {
   padding: 0;
