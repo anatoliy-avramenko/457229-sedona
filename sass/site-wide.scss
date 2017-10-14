@@ -1,13 +1,13 @@
 @font-face {
   font-weight: normal;
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
   font-weight: bold;
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
@@ -16,7 +16,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: $mine-shaft;

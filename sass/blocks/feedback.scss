@@ -522,7 +522,7 @@
   transition: 0.4s;
 }
 
-.feedback__question--check::before:hover {
+.feedback__question--check:hover::before {
   background: $mercury;
 }
 

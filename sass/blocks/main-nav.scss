@@ -202,37 +202,47 @@
 .main-nav__image {
   position: relative;
   z-index: 1;
+  width: 102px;
+  height: 83px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__image {
+    width: 188px;
+    height: 96px;
+  }
 }
 
 ///////////////////////////////////////////////
 //MAIN-NAV__TOGGLE
 
-.main-nav__toggle {
-  width: 23px;
-  height: 23px;
-  font-size: 0;
-  position: absolute;
-  top: 16px;
-  right: 18px;
-  z-index: 5;
-  cursor: pointer;
-}
-
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-.main-nav--opened .main-nav__toggle {
-  &::before {
-    font-size: 23px;
-    color: $white;
+@media (max-width: $tablet-width) {
+  .main-nav__toggle {
+    display: block;
+    width: 23px;
+    height: 23px;
+    font-size: 0;
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    z-index: 5;
+    cursor: pointer;
+    transition: 0s;
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
   }
-}
 
-.main-nav--closed .main-nav__toggle {
-  &::before {
-    font-size: 23px;
-    color: $half-baked;
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__toggle--close {
+    background-image: url("#{$path-to-img}/icon-menu.svg");
+  }
+
+  .main-nav__toggle--open {
+    background-image: url("#{$path-to-img}/icon-cross.svg");
+    background-repeat: no-repeat;
   }
 }
 
