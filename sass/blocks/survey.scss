@@ -23,7 +23,7 @@
 }
 
 .survey--photo {
-  padding: 32px 25px 45px;
+  padding: 32px 20px 45px;
 }
 
 @media (min-width: $tablet-width) {
@@ -83,6 +83,7 @@
 
 .survey__description--photo {
   margin: 0 auto 35px;
+  padding: 0 10px;
 }
 
 @media (min-width: $tablet-width) {

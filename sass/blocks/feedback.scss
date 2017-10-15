@@ -407,7 +407,9 @@
   width: 100%;
   height: 58px;
 
-  &::-webkit-input-placeholder {
+  &::-webkit-input-placeholder,
+  :-moz-placeholder,
+  :-ms-input-placeholder {
     color: $black;
     text-align: left;
   }
