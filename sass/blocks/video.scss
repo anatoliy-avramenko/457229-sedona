@@ -18,6 +18,7 @@
 
 .video__item {
   margin: 0 -30px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,9 +26,6 @@
     width: 648px;
     height: 500px;
     margin: 0 auto;
-
-    //temporary
-    border: 1px solid grey;
   }
 }
 
@@ -95,6 +93,14 @@
   bottom: 18px;
   left: 78px;
   cursor: pointer;
+}
+
+.video__current:hover {
+  background: $mine-shaft;
+}
+
+.video__current:active {
+  background: $silver;
 }
 
 @media (min-width: $tablet-width) {

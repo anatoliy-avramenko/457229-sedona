@@ -8,26 +8,31 @@
   width: 46px;
   height: 48px;
   padding: 0;
-  margin: 0 4px 0;
   transition: 0.4s;
+  vertical-align: middle;
 }
 
 .social__button:hover {
-  background: $fountain-blue;
+  background-color: $fountain-blue;
 }
 
 .social__button:active {
-  background: $steel-blue;
+  background-color: $steel-blue;
 }
 
-.social__button::before {
-  font-size: 20px;
+
+//.social__button:active::before {
+//  color: $half-baked;
+//}
+
+.social__icon path {
+  fill: $white;
   line-height: 48px;
-  vertical-align: middle;
-  color: $white;
-  transition: 0.4s;
+  width: 20px;
+  height: 20px;
 }
 
-.social__button:active::before {
-  color: $half-baked;
+.social__button:active .social__icon path {
+  fill: $half-baked;
+  transition: 0.4s;
 }

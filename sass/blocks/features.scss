@@ -49,6 +49,10 @@
 ///////////////////////////////////////////////
 //FEATURES__CONTENTS
 
+.features__contents {
+  padding: 40px 25px 0;
+}
+
 @media (min-width: $tablet-width) {
   .features__contents {
     width: 256px;
@@ -73,16 +77,18 @@
 .features__item {
   padding: 20px 25px 0;
   font-size: 0;
+  display: block;
+  overflow: hidden;
 }
 
 .features__item--detailed {
   background: $half-baked;
   color: $white;
-  padding: 40px 25px 0;
+  padding: 0 0 0;
 }
 
 .features__item--arrowed {
-  padding: 70px 25px 0;
+  padding: 30px 0 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -280,27 +286,54 @@
 
 .features__cover {
   width: 320px;
-  margin: 0 -25px;
+  display: block;
+  background-color: #92807c;
 }
 
 @media (min-width: $tablet-width) {
   .features__cover {
     flex-grow: 1;
-    margin: 0 0;
-    height: 100%;
+    width: 512px;
+    height: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__cover {
+    width: 800px;
+    height: 400px;
   }
 }
 
 ///////////////////////////////////////////////
 //FEATURES__ICON
 
-.features__icon::before {
-  font-size: 40px;
-  color: $half-baked;
+.features__icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: initial;
+  background-size: 39px 37px;
+  height: 40px;
+  width: 40px;
+}
+
+.features__icon--house {
+  background-image: url("#{$path-to-img}/icon-house.svg");
+}
+
+.features__icon--gift {
+  background-image: url("#{$path-to-img}/icon-gift.svg");
+}
+
+.features__icon--burger {
+  background-image: url("#{$path-to-img}/icon-burger.svg");
 }
 
 @media (min-width: $tablet-width) {
-  .features__icon::before {
-    font-size: 75px;
+  .features__icon {
+    background-size: 75px 72px;
+    height: 75px;
+    width: 75px;
   }
 }
+

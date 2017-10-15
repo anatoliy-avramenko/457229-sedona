@@ -28,50 +28,34 @@
   }
 }
 
-.subheader::after,
-.subheader::before {
+.subheader::after {
   content: "";
   display: block;
   background-image: url("#{$path-to-img}/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-attachment: initial;
-  background-size: cover;
-  width: 320px;
-  height: 28px;
+  background-size: 334px auto;
+  width: 100%;
+  height: 60px;
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 3;
   margin: 0 auto;
 }
 
-.subheader::before {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .subheader::after {
-    width: 700px;
-    height: 60px;
-  }
-
-  .subheader::before {
-    display: block;
-    width: 780px;
-    height: 70px;
-    bottom: -25px;
+    background-image: url("#{$path-to-img}/bg-intro-triangle-tablet.svg");
+    background-size: 768px auto;
   }
 }
 
-//временное решение, пока нет треугольников для desktop
 @media (min-width: $desktop-width) {
-  .subheader::before {
-    display: block;
-    width: 1210px;
-    min-height: 170px;
-    bottom: -25px;
+  .subheader::after {
+    background-image: url("#{$path-to-img}/bg-intro-triangle-desktop.svg");
+    background-size: 1200px auto;
   }
 }
 
@@ -79,24 +63,29 @@
 //SUBHEADER__COVER
 
 .subheader__cover {
+  background-color: #778591;
   display: block;
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  right: -225px;
   z-index: -1;
+  height: 389px;
+  width: 768px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .subheader__cover {
-    height: 520px;
+    height: 518px;
     width: 768px;
+    right: 0;
+    left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .subheader__cover {
-    height: 520px;
+    height: 518px;
     width: 1200px;
   }
 }
@@ -116,6 +105,10 @@
   background-attachment: initial;
   background-size: contain;
   margin: 0 auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("#{$path-to-img}/text-sedona.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {

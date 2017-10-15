@@ -106,6 +106,7 @@
   border-top: 1px solid $aqua-island;
   display: block;
   transition: 0.4s;
+  z-index: 3;
 
   &:first-of-type {
     border-top: none;
@@ -185,7 +186,7 @@
     right: auto;
     margin: 0 auto;
     background: none;
-    width: 102px;
+    //width: 102px;
   }
 }
 
@@ -200,7 +201,7 @@
 //MAIN-NAV__IMAGE
 
 .main-nav__image {
-  position: relative;
+  //position: relative;
   z-index: 1;
   width: 102px;
   height: 83px;

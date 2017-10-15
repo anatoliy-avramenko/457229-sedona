@@ -25,6 +25,7 @@
 .photos__item {
   padding: 21px 20px 16px;
   width: 100%;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
@@ -157,7 +158,7 @@
   font-weight: 700;
   color: $black;
   text-align: left;
-  padding-left: 8px;
+  margin-left: 8px;
   position: relative;
   bottom: 2px;
 }
@@ -178,34 +179,34 @@
 ///////////////////////////////////////////////
 //PHOTOS__UPVOTES
 
-.photos__upvotes::before {
+.photos__upvotes {
   display: inline-block;
-  color: $silver-chalice;
-  font-size: 20px;
-  text-align: left;
+  width: 22px;
+  height: 20px;
   cursor: pointer;
+
+  & path {
+    fill: $silver-chalice;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .photos__upvotes {
+    fill: $silver-chalice;
     margin-left: auto;
+    position: relative;
+    bottom: 5px;
   }
 
   .photos__upvotes--highlighted {
     position: relative;
-    right: 5px;
-  }
-
-  .photos__upvotes::before {
-    position: relative;
-    bottom: 5px;
+    right: 8px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .photos__upvotes::before {
-    color: $white;
-    margin: 0 auto;
+  .photos__upvotes path {
+    fill: $white;
   }
 }
 
@@ -215,6 +216,9 @@
 .photos__image {
   margin-bottom: 16px;
   width: 100%;
+  height: auto;
+  display: block;
+  background-color: #9e774c;
 }
 
 @media (min-width: $tablet-width) {
@@ -232,5 +236,15 @@
 //PHOTOS__FULLSIZE
 
 .photos__fullsize {
-  font-size: 0;
+  height: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__fullsize {
+    height: 268px;
+  }
+
+  .photos__fullsize--large {
+    height: 400px;
+  }
 }
