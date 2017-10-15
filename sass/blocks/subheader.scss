@@ -105,10 +105,6 @@
   background-attachment: initial;
   background-size: contain;
   margin: 0 auto;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("#{$path-to-img}/text-sedona.svg");
-  }
 }
 
 @media (min-width: $tablet-width) {
