@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 43px 0;
+  padding: 0 0 0 0;
 }
 
 @media (min-width: $desktop-width) {
@@ -12,27 +12,18 @@
   }
 }
 
-.copyright__logo {
+.copyright__icon {
   display: inline-block;
   fill: $black;
   width: 27px;
   height: 34px;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
-.copyright__icon {
-  margin: 0 0 0 15px;
+.copyright__wrapper:hover .copyright__icon path {
+  fill: $half-baked;
 }
 
-.copyright__icon::before {
-  font-size: 34px;
-  color: $black;
-}
-
-.copyright__wrapper:hover .copyright__icon::before {
-  color: $half-baked;
-}
-
-.copyright__wrapper:active .copyright__icon::before {
-  color: $silver-chalice;
+.copyright__wrapper:active .copyright__icon path {
+  fill: $silver-chalice;
 }

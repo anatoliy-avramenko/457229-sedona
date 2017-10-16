@@ -407,7 +407,9 @@
   width: 100%;
   height: 58px;
 
-  &::-webkit-input-placeholder {
+  &::-webkit-input-placeholder,
+  :-moz-placeholder,
+  :-ms-input-placeholder {
     color: $black;
     text-align: left;
   }
@@ -522,7 +524,7 @@
   transition: 0.4s;
 }
 
-.feedback__question--check::before:hover {
+.feedback__question--check:hover::before {
   background: $mercury;
 }
 
@@ -588,7 +590,7 @@
     display: block;
     width: 58px;
     height: 58px;
-    background: $mercury;
+    background-color: $mercury;
     position: absolute;
     top: 0;
     right: 0;
@@ -602,19 +604,16 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    background-repeat: no-repeat;
   }
 }
 
-.feedback__answer__wrapper--email {
-  &::after {
-    background: url("#{$path-to-img}/icon-mail.svg") no-repeat;
-  }
+.feedback__answer__wrapper--email::after {
+  background-image: url("#{$path-to-img}/icon-mail.svg");
 }
 
-.feedback__answer__wrapper--tel {
-  &::after {
-    background: url("#{$path-to-img}/icon-phone.svg") no-repeat;
-  }
+.feedback__answer__wrapper--tel::after {
+  background: url("#{$path-to-img}/icon-phone.svg");
 }
 
 @media (min-width: $desktop-width) {

@@ -9,13 +9,13 @@
     if (navMain.classList.contains('main-nav--closed')) {
       navMain.classList.remove('main-nav--closed');
       navMain.classList.add('main-nav--opened');
-      navToggle.classList.remove('icon-menu');
-      navToggle.classList.add('icon-cross');
+      navToggle.classList.remove('main-nav__toggle--close');
+      navToggle.classList.add('main-nav__toggle--open');
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
-      navToggle.classList.add('icon-menu');
-      navToggle.classList.remove('icon-cross');
+      navToggle.classList.remove('main-nav__toggle--open');
+      navToggle.classList.add('main-nav__toggle--close');
     }
   });
 
