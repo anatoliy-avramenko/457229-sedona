@@ -21,7 +21,7 @@
   font-weight: 400;
   color: $mine-shaft;
   text-decoration: none;
-  transition: 0.4s;
+  transition: 0s;
   outline: none;
   text-transform: uppercase;
 }
@@ -50,6 +50,7 @@ body {
 .site-width {
   text-align: center;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media (min-width: $desktop-width) {

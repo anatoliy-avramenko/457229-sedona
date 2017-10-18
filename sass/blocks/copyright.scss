@@ -18,12 +18,13 @@
   width: 27px;
   height: 34px;
   margin-left: 15px;
+  transition: 0.4s;
 }
 
-.copyright__wrapper:hover .copyright__icon path {
+.copyright__wrapper:hover .copyright__icon {
   fill: $half-baked;
 }
 
-.copyright__wrapper:active .copyright__icon path {
+.copyright__wrapper:active .copyright__icon {
   fill: $silver-chalice;
 }
