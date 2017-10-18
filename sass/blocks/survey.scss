@@ -79,6 +79,13 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0 auto 35px;
+  white-space: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .survey__description {
+    white-space: pre;
+  }
 }
 
 .survey__description--photo {
@@ -88,7 +95,6 @@
 
 @media (min-width: $tablet-width) {
   .survey__description {
-    width: 458px;
     padding-bottom: 42px;
   }
 
