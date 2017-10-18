@@ -113,6 +113,9 @@ body {
 .site__line-break {
   display: inline;
   color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 @media (min-width: $tablet-width) {
