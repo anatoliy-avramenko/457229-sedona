@@ -110,7 +110,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback__questions-set--textarea {
-    padding: 14px 0 36px;
+    padding: 37px 0 40px;
   }
 }
 
@@ -246,7 +246,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback__title--check {
-    padding: 0 300px;
+    padding: 0 125px;
     margin: 0 0 41px 0;
   }
 }
@@ -254,7 +254,6 @@
 @media (min-width: $desktop-width) {
   .feedback__title--check {
     padding: 0 300px;
-    margin: 0 0 41px 0;
   }
 }
 
@@ -280,7 +279,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback__title--radio {
-    text-align: center;
+    text-align: right;
     margin: 0 0 58px 0;
   }
 }
@@ -642,8 +641,14 @@
 
 @media (min-width: $tablet-width) {
   .feedback__completion {
-    padding: 68px 0 63px;
+    padding: 67px 0 63px;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__completion {
+    padding: 67px 0 69px;
   }
 }
 

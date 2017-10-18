@@ -70,7 +70,7 @@ gulp.task('min-js', function() {
 gulp.task("webp", function () {
   return gulp.src("img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("img/webp"));
 });
 
 gulp.task("serve", function() {

@@ -109,3 +109,20 @@ body {
     display: none;
   }
 }
+
+.site__line-break {
+  display: inline;
+  color: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .site__line-break--limited {
+    display: inline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site__line-break {
+    display: block;
+  }
+}
