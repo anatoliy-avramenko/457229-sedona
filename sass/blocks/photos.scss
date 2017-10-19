@@ -23,7 +23,7 @@
 //PHOTOS__ITEM
 
 .photos__item {
-  padding: 21px 20px 16px;
+  padding: 22px 20px 18px;
   width: 100%;
   overflow: hidden;
 }
@@ -184,15 +184,11 @@
   width: 22px;
   height: 20px;
   cursor: pointer;
-
-  & path {
-    fill: $silver-chalice;
-  }
+  fill: $silver-chalice;
 }
 
 @media (min-width: $tablet-width) {
   .photos__upvotes {
-    fill: $silver-chalice;
     margin-left: auto;
     position: relative;
     bottom: 5px;
@@ -205,7 +201,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photos__upvotes path {
+  .photos__upvotes {
     fill: $white;
   }
 }

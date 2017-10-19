@@ -2,7 +2,7 @@
 //INTRO
 
 .intro {
-  padding: 44px 30px 14px;
+  padding: 44px 30px 12px;
   margin: 0 auto;
   width: $mobile-width;
   background: $white;
@@ -27,7 +27,7 @@
 //INTRO--PHOTO
 
 .intro--photo {
-  padding: 40px 25px 24px;
+  padding: 40px 25px 26px;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,7 +57,7 @@
 
 @media (min-width: $desktop-width) {
   .intro--form {
-    padding: 112px 377px 60px;
+    padding: 112px 300px 60px;
   }
 }
 
@@ -88,17 +88,16 @@
 //INTRO__TITLE
 
 .intro__title {
-  margin: 0 auto;
+  margin: 0 auto 24px;
   font-size: 18px;
   line-height: 26px;
   color: $black;
   font-weight: 700;
-  margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .intro__title {
-    width: 460px;
+    width: 500px;
     font-size: 21px;
   }
 }
@@ -132,4 +131,8 @@
 
 .intro__description--form {
   line-height: 24px;
+}
+
+.intro__description--photo {
+  line-height: 25px;
 }

@@ -21,7 +21,7 @@
   font-weight: 400;
   color: $mine-shaft;
   text-decoration: none;
-  transition: 0.4s;
+  transition: 0s;
   outline: none;
   text-transform: uppercase;
 }
@@ -50,6 +50,7 @@ body {
 .site-width {
   text-align: center;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media (min-width: $desktop-width) {
@@ -106,5 +107,25 @@ body {
 @media (min-width: $tablet-width) {
   .separator::after {
     display: none;
+  }
+}
+
+.site__line-break {
+  display: inline;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .site__line-break--limited {
+    display: inline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site__line-break {
+    display: block;
   }
 }

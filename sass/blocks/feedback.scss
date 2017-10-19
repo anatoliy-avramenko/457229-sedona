@@ -110,7 +110,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback__questions-set--textarea {
-    padding: 14px 0 36px;
+    padding: 37px 0 40px;
   }
 }
 
@@ -246,7 +246,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback__title--check {
-    padding: 0 300px;
+    padding: 0 125px;
     margin: 0 0 41px 0;
   }
 }
@@ -254,7 +254,6 @@
 @media (min-width: $desktop-width) {
   .feedback__title--check {
     padding: 0 300px;
-    margin: 0 0 41px 0;
   }
 }
 
@@ -280,7 +279,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback__title--radio {
-    text-align: center;
+    text-align: right;
     margin: 0 0 58px 0;
   }
 }
@@ -336,7 +335,7 @@
     margin: 0 0 0 0;
 
     &:nth-of-type(2) {
-      width: 480px;
+      width: 492px;
     }
   }
 }
@@ -406,17 +405,27 @@
   vertical-align: middle;
   width: 100%;
   height: 58px;
+}
 
-  &::-webkit-input-placeholder,
-  :-moz-placeholder,
-  :-ms-input-placeholder {
-    color: $black;
-    text-align: left;
-  }
+.feedback__answer:-ms-input-placeholder {
+  font-size: 16px;
 }
 
 .feedback__answer:focus::-webkit-input-placeholder {
   color: transparent;
+}
+
+.feedback__answer:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.feedback__answer::-webkit-input-placeholder {
+  color: black;
+}
+
+.feedback__answer::-moz-placeholder {
+  color: black;
+  opacity: 1;
 }
 
 .feedback__answer:hover {
@@ -439,6 +448,7 @@
   transition: 0.4s;
 }
 
+
 //feedback__answer--misc
 
 @media (min-width: $desktop-width) {
@@ -454,6 +464,7 @@
   padding: 20px 20px 18px 20px;
   height: 118px;
 }
+
 
 ///////////////////////////////////////////////
 //FEEDBACK__QUESTION
@@ -474,7 +485,7 @@
 @media (min-width: $desktop-width) {
   .feedback__question--misc {
     padding: 0 0 0 0;
-    margin: 0 15px 0 0;
+    margin: 0 14px 0 0;
     display: block;
   }
 }
@@ -636,8 +647,14 @@
 
 @media (min-width: $tablet-width) {
   .feedback__completion {
-    padding: 68px 0 63px;
+    padding: 67px 0 63px;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__completion {
+    padding: 67px 0 69px;
   }
 }
 
@@ -681,11 +698,11 @@
 //FEEDBACK__HIDDEN
 
 .feedback__hidden {
-  display: none;
+  display: inline;
 }
 
 @media (min-width: $desktop-width) {
-  .feedback__legend {
-    display: inline;
+  .feedback__hidden {
+    display: none;
   }
 }
