@@ -28,7 +28,7 @@
 ///////////////////////////////////////////////
 //MAIN-NAV__LIST
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width-max) {
   .main-nav--opened .main-nav__list {
     display: block;
   }
@@ -62,7 +62,7 @@
   line-height: 55px;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width-max) {
   .main-nav__item:active .main-nav__link,
   .main-nav__link--active {
     color: rgba(255, 255, 255, 0.3);
@@ -124,7 +124,7 @@
   background: $mercury;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width-max) {
   .main-nav__item:hover {
     background: $fountain-blue;
   }
@@ -195,11 +195,13 @@
 
 .main-nav__top-bar {
   height: 56px;
+  //height: 200px;
   background: $white;
   width: 100%;
   position: relative;
 }
 
+//@media (min-width: $tablet-width) {
 @media (min-width: $tablet-width) {
   .main-nav__top-bar {
     position: relative;
@@ -216,6 +218,7 @@
 
 .main-nav__logo {
   margin: 0 auto;
+  position: relative;
 }
 
 ///////////////////////////////////////////////
@@ -238,7 +241,7 @@
 ///////////////////////////////////////////////
 //MAIN-NAV__TOGGLE
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width-max) {
   .main-nav__toggle {
     display: block;
     width: 23px;

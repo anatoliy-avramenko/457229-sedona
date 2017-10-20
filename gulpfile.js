@@ -16,6 +16,7 @@ var minifyJs = require('gulp-minify');
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var server = require("browser-sync").create();
+var reload = server.reload;
 
 
 
@@ -82,8 +83,8 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html", ["html"]);
+  gulp.watch("sass/**/*.{scss,sass}", ["style"]).on('change', reload);
+  gulp.watch("*.html", ["html"]).on('change', reload);
 
 });
 

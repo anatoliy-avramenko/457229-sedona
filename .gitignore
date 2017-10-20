@@ -9,5 +9,4 @@ css/*.css
 node_modules/
 npm-debug.*
 Thumbs.db
-js/picturefill.js
 build/
