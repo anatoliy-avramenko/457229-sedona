@@ -1,6 +1,6 @@
 @font-face {
   font-weight: normal;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-display: swap;
   font-style: normal;
   src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
@@ -8,7 +8,7 @@
 
 @font-face {
   font-weight: bold;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-display: swap;
   font-style: normal;
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
@@ -41,7 +41,6 @@ body {
 .page-wrapper {
   min-width: 320px;
   background: $concrete;
-  //background: red;
   display: block;
   margin: 0 auto;
 }
