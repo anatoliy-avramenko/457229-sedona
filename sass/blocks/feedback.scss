@@ -234,7 +234,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback__title--misc {
-    margin: 0 0 75px 0;
+    margin: 0 0 72px 0;
   }
 }
 
@@ -335,7 +335,7 @@
     margin: 0 0 0 0;
 
     &:nth-of-type(2) {
-      width: 492px;
+      width: auto;
     }
   }
 }
@@ -667,18 +667,6 @@
   width: 100%;
 }
 
-@media (min-width: $tablet-width) {
-  .feedback__button {
-    width: 324px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .feedback__button {
-    width: 480px;
-  }
-}
-
 
 ///////////////////////////////////////////////
 //FEEDBACK__LEGEND
@@ -705,5 +693,25 @@
 @media (min-width: $desktop-width) {
   .feedback__hidden {
     display: none;
+  }
+}
+
+
+///////////////////////////////////////////////
+//FEEDBACK__COMPLETION
+
+.feedback__submitting {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__submitting {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__submitting {
+    width: 480px;
   }
 }

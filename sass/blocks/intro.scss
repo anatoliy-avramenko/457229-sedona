@@ -27,7 +27,7 @@
 //INTRO--PHOTO
 
 .intro--photo {
-  padding: 40px 25px 26px;
+  padding: 37px 25px 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -88,7 +88,7 @@
 //INTRO__TITLE
 
 .intro__title {
-  margin: 0 auto 24px;
+  margin: 0 auto 28px;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -108,7 +108,7 @@
 }
 
 .intro__title--form {
-  margin-bottom: 27px;
+  margin: 0 0 27px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -134,5 +134,11 @@
 }
 
 .intro__description--photo {
-  line-height: 25px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__description--photo {
+    line-height: 25px;
+  }
 }

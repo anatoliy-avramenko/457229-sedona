@@ -179,7 +179,7 @@
 
 .photos__likes::before {
   position: absolute;
-  left: -32px;
+  left: -36px;
   top: 0;
   bottom: 0;
   display: block;
@@ -195,6 +195,7 @@
 @media (min-width: $tablet-width) {
   .photos__likes::before {
     background-image: url("#{$path-to-img}/icon-like-mobile.svg");
+    left: -32px;
   }
 }
 
@@ -209,7 +210,7 @@
 //PHOTOS__IMAGE
 
 .photos__image {
-  margin-bottom: 16px;
+  margin: 0 0 19px 0;
   width: 100%;
   height: auto;
   display: block;
