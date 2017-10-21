@@ -2,29 +2,53 @@
 //SUBHEADER
 
 .subheader {
+  display: block;
   position: relative;
   height: 157px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-image: url("#{$path-to-img}/bg-back-mobile@1x.jpg");
+  background-size: 768px 389px;
+  background-position: center center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("#{$path-to-img}/bg-back-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .subheader {
     height: 289px;
+    background-image: url("#{$path-to-img}/bg-back-tablet@1x.jpg");
+    background-size: 768px 518px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("#{$path-to-img}/bg-back-tablet@2x.jpg");
+    }
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .subheader {
     height: 300px;
+    background-image: url("#{$path-to-img}/bg-back-desktop@1x.jpg");
+    background-size: 1200px 518px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("#{$path-to-img}/bg-back-desktop@2x.jpg");
+    }
   }
 }
 
 .subheader--home {
   height: 390px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
   .subheader--home {
-    height: 520px;
+    height: 518px;
   }
 }
 
