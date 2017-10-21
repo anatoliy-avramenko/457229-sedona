@@ -158,7 +158,7 @@
   font-weight: 700;
   color: $black;
   text-align: left;
-  margin-left: 8px;
+  margin: 0 0 0 37px;
   position: relative;
   bottom: 2px;
 }
@@ -176,35 +176,33 @@
   }
 }
 
-///////////////////////////////////////////////
-//PHOTOS__UPVOTES
-
-.photos__upvotes {
-  display: inline-block;
+.photos__likes::before {
+  position: absolute;
+  left: -32px;
+  top: 0;
+  bottom: 0;
+  display: block;
+  content: "";
   width: 22px;
   height: 20px;
+  background-image: url("#{$path-to-img}/icon-like-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 20px;
   cursor: pointer;
-  fill: $silver-chalice;
 }
 
 @media (min-width: $tablet-width) {
-  .photos__upvotes {
-    margin-left: auto;
-    position: relative;
-    bottom: 5px;
-  }
-
-  .photos__upvotes--highlighted {
-    position: relative;
-    right: 8px;
+  .photos__likes::before {
+    background-image: url("#{$path-to-img}/icon-like-mobile.svg");
   }
 }
 
 @media (min-width: $desktop-width) {
-  .photos__upvotes {
-    fill: $white;
+  .photos__likes::before {
+    background-image: url("#{$path-to-img}/icon-like-desktop.svg");
   }
 }
+
 
 ///////////////////////////////////////////////
 //PHOTOS__IMAGE

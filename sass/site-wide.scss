@@ -121,13 +121,13 @@ body {
 }
 
 @media (min-width: $tablet-width) {
-  .site__line-break--limited {
-    display: inline;
+  .site__line-break {
+    display: block;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .site__line-break {
-    display: block;
+  .site__line-break--limited {
+    display: inline;
   }
 }
