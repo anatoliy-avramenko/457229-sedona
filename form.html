@@ -29,7 +29,7 @@
               <a class="main-nav__link main-nav__link--active">Форма Отзыва</a>
             </li>
             <li class="site-list__item main-nav__item main-nav__item--last">
-              <a href="https://up.htmlacademy.ru/adaptive/12" class="main-nav__link">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
             </li>
           </ul>
           <div class="main-nav__top-bar">
@@ -44,11 +44,6 @@
         </nav>
 
         <div class="subheader">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
-            <img class="subheader__cover" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Sedona-canyon">
-          </picture>
           <div class="subheader__title">
             <h1 class="visually-hidden">Sedona</h1>
           </div>
@@ -150,12 +145,21 @@
             <div class="feedback__questions-set feedback__questions-set--textarea">
               <h3 class="feedback__title feedback__title--separator feedback__title--textarea">Опишите свои эмоции:</h3>
               <div class="feedback__item feedback__item--textarea">
-                <textarea name="emotions" id="emotions" cols="30" rows="6" class="feedback__answer feedback__answer--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea
+                  class="feedback__answer feedback__answer--textarea"
+                  name="emotions"
+                  id="emotions"
+                  cols="30"
+                  rows="6"
+                  placeholder="Опишите подробно все свои восторги">
+                </textarea>
               </div>
             </div>
 
             <div class="feedback__completion">
-              <button type="submit" class="site-button feedback__button">Отправить отзыв</button>
+              <a class="feedback__submitting" href="form-submit.html" >
+                <button type="submit" class="site-button feedback__button">Отправить отзыв</button>
+              </a>
               <aside class="feedback__legend">* — Обязательные поля</aside>
             </div>
 
@@ -187,46 +191,41 @@
 
           <section class="social">
             <h2 class="visually-hidden">Социальные ссылки</h2>
-            <ul class="social__list site-list">
-              <li class="social__item">
-                <button class="site-button social__button social__button--twitter">
-                  <span class="visually-hidden">Twitter</span>
-                  <svg class="social__icon social__icon--twitter" width="20px" height="20px">
-                    <use xlink:href='#icon-twitter'></use>
-                  </svg>
-                </button>
-              </li>
+            <div class="social__list">
 
-              <li class="social__item">
-                <button class="site-button social__button social__button--facebook">
-                  <span class="visually-hidden">Facebook</span>
-                  <svg class="social__icon social__icon--facebook" width="20px" height="20px">
-                    <use xlink:href='#icon-facebook'></use>
-                  </svg>
-                </button>
-              </li>
+              <a class="social__item social__item--twitter" href="https://vk.com/">
+                <span class="visually-hidden">Twitter</span>
+                <svg class="social__icon social__icon--twitter" width="20" height="20">
+                  <use xlink:href='#icon-twitter'></use>
+                </svg>
+              </a>
 
-              <li class="social__item">
-                <button class="site-button social__button social__button--youtube">
-                  <span class="visually-hidden">YouTube</span>
-                  <svg class="social__icon social__icon--youtube" width="20px" height="20px">
-                    <use xlink:href='#icon-youtube'></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
+              <a class="social__item social__item--facebook">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="social__icon social__icon--facebook" width="20" height="20">
+                  <use xlink:href='#icon-facebook'></use>
+                </svg>
+              </a>
+
+              <a class="social__item social__item--youtube">
+                <span class="visually-hidden">YouTube</span>
+                <svg class="social__icon social__icon--youtube" width="20" height="20">
+                  <use xlink:href='#icon-youtube'></use>
+                </svg>
+              </a>
+
+            </div>
           </section>
 
           <section class="copyright">
             <h2 class="visually-hidden">Copyright</h2>
-            <a href="https://up.htmlacademy.ru/adaptive/12" class="copyright__wrapper">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__wrapper">
               <p class="copyright__text">Разработано</p>
-              <svg class="copyright__icon" width="26.943px" height="34.09px">
+              <svg class="copyright__icon" width="26.943" height="34.09">
                 <use xlink:href='#icon-htmlacademy'></use>
               </svg>
             </a>
           </section>
-
 
         </footer>
     </div>

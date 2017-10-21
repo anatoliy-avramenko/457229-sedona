@@ -4,20 +4,22 @@
   margin-bottom: 40px;
 }
 
-.social__button {
+.social__item {
+  display: block;
   width: 46px;
   height: 48px;
   padding: 13px;
   transition: 0.4s;
   vertical-align: middle;
-  margin: 0 2.5px;
+  margin: 0 3px;
+  background: $half-baked;
 }
 
-.social__button:hover {
+.social__item:hover {
   background-color: $fountain-blue;
 }
 
-.social__button:active {
+.social__item:active {
   background-color: $steel-blue;
 }
 
@@ -29,6 +31,6 @@
   transition: 0.4s;
 }
 
-.social__button:active .social__icon {
+.social__item:active .social__icon {
   fill: $half-baked;
 }
