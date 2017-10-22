@@ -2,13 +2,13 @@
 //MAIN-NAV
 
 .main-nav {
+  display: block;
   position: relative;
   width: 320px;
   margin: 0 auto;
   background: $white;
   transition: 0.4s;
   font-size: 0;
-  display: block;
 }
 
 @media (min-width: $tablet-width) {
