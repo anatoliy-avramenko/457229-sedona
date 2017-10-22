@@ -9,6 +9,7 @@
   .copyright__wrapper {
     position: relative;
     left: 85px;
+    bottom: 4px;
   }
 }
 
@@ -27,4 +28,9 @@
 
 .copyright__wrapper:active .copyright__icon {
   fill: $silver-chalice;
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 26px;
 }

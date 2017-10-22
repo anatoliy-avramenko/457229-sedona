@@ -40,7 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .modal--success {
-    bottom: 370px;
+    bottom: 380px;
     padding: 65px 110px 0;
   }
 }
@@ -85,6 +85,7 @@
 }
 
 .modal__button {
+  display: block;
   width: 180px;
 }
 

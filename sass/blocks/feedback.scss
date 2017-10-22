@@ -665,6 +665,19 @@
 
 .feedback__button {
   width: 100%;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__button {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__button {
+    width: 480px;
+  }
 }
 
 
@@ -697,21 +710,21 @@
 }
 
 
-///////////////////////////////////////////////
-//FEEDBACK__COMPLETION
-
-.feedback__submitting {
-  width: 100%;
-}
-
-@media (min-width: $tablet-width) {
-  .feedback__submitting {
-    width: 324px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .feedback__submitting {
-    width: 480px;
-  }
-}
+/////////////////////////////////////////////////
+////FEEDBACK__COMPLETION
+//
+//.feedback__submitting {
+//  width: 100%;
+//}
+//
+//@media (min-width: $tablet-width) {
+//  .feedback__submitting {
+//    width: 324px;
+//  }
+//}
+//
+//@media (min-width: $desktop-width) {
+//  .feedback__submitting {
+//    width: 480px;
+//  }
+//}

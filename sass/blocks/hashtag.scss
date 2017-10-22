@@ -1,11 +1,12 @@
 .hashtag {
   padding: 0 32px 34px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
   .hashtag {
     padding: 0 0;
-    line-height: 48px;
+    line-height: 26px;
   }
 }
 
